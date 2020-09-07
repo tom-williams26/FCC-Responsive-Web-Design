@@ -1,1 +1,2 @@
-# FCC-Responsive-Web-Design
+# FreeCodeCamp Online Course
+# Responsive front-end Web design projects.

@@ -15,8 +15,8 @@
         <nav id="navbar">
             <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
+        <i class="fas fa-bars"></i>
+      </label>
             <header>
                 <h1 id="header-title">OpenWeatherMap API Guide</h1>
             </header>
@@ -28,31 +28,25 @@
                     <a href="#one_cal_api" class="nav-link">One Call API</a>
                 </li>
                 <li id="nav-item">
-                    <a href="#current_weather" class="nav-link">Current and forecast weather data</a
-            >
-          </li>
-          <li id="nav-item">
-            <a href="#make_api_call" class="nav-link"
-              >How to make an API call</a
-            >
-          </li>
-          <li id="nav-item"><a href="#display" class="nav-link">Display</a></li>
+                    <a href="#current_weather" class="nav-link">Current and forecast weather data</a>
+                </li>
                 <li id="nav-item">
-                    <a href="#grid_template_columns" class="nav-link">Grid Template Columns</a
-            >
-          </li>
-          <li id="nav-item">
-            <a href="#grid_template_rows" class="nav-link"
-              >Grid Template Rows</a
-            >
-          </li>
-          <li id="nav-item">
-            <a href="#grid_template_areas" class="nav-link"
-              >Grid Template Areas</a
-            >
-          </li>
-          <li id="nav-item">
-            <a href="#grid_gap" class="nav-link">Grid Gap</a>
+                    <a href="#make_api_call" class="nav-link">How to make an API call</a>
+                </li>
+                <li id="nav-item">
+                    <a href="#example_api_response" class="nav-link">Example of API response</a>
+                </li>
+                <li id="nav-item">
+                    <a href="#fields_api_response" class="nav-link">Fields in API response</a>
+                </li>
+                <li id="nav-item">
+                    <a href="#grid_template_rows" class="nav-link">Grid Template Rows</a>
+                </li>
+                <li id="nav-item">
+                    <a href="#grid_template_areas" class="nav-link">Grid Template Areas</a>
+                </li>
+                <li id="nav-item">
+                    <a href="#grid_gap" class="nav-link">Grid Gap</a>
                 </li>
             </ul>
         </nav>
@@ -97,21 +91,20 @@
                 <p>
                     To get access to
                     <strong>current weather, minute forecast for 1 hour, hourly forecast for
-              48 hours and daily forecast for 7 days</strong
-            >, please use this section of thje documentation.
-          </p>
-        </section>
-        <section id="make_api_call" class="main-section">
-          <header><h2>How to make an API call</h2></header>
-          <p>API call:</p>
-          <code
-            ><b
+            48 hours and daily forecast for 7 days</strong>, please use this section of thje documentation.
+                </p>
+            </section>
+            <section id="make_api_call" class="main-section">
+                <header>
+                    <h2>How to make an API call</h2>
+                </header>
+                <p>API call:</p>
+                <code><b
               >https://api.openweathermap.org/data<br />/2.5/onecall?lat={lat}&lon={lon}&
               exclude={part}&appid={YOUR API KEY}</b
-            ></code
-          >
-          <p>
-            <strong>lat, lon</strong> - geographical coordinates (latitude, longitude)
+            ></code>
+                <p>
+                    <strong>lat, lon</strong> - geographical coordinates (latitude, longitude)
                 </p>
                 <p>
                     <strong>API key</strong> - unique API key (you can always find it on the account page, on "API key" tab)
@@ -130,129 +123,153 @@
                 <code><b
               >https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&
               exclude=hourly,daily&appid={YOUR API KEY}</b
-            ></code
-          >
-        </section>
-        <section id="example_api_response" class="main-section">
-          <pre>
-          " {
-            "lat": 40.12,
-            "lon": -96.66,
-            "timezone": "America/Chicago",
-            "timezone_offset": -18000,
-            "current": {
-              "dt": 1595243443,
-              "sunrise": 1595243663,
-              "sunset": 1595296278,
-              "temp": 293.28,
-              "feels_like": 293.82,
-              "pressure": 1016,
-              "humidity": 100,
-              "dew_point": 293.28,
-              "uvi": 10.64,
-              "clouds": 90,
-              "visibility": 10000,
-              "wind_speed": 4.6,
-              "wind_deg": 310,
-              "weather": [
-                {
-                  "id": 501,
-                  "main": "Rain",
-                  "description": "moderate rain",
-                  "icon": "10n"
-                },
-                {
-                  "id": 201,
-                  "main": "Thunderstorm",
-                  "description": "thunderstorm with rain",
-                  "icon": "11n"
-                }
-              ],
-              "rain": {
-                "1h": 2.93
-              }
-            },
-            "minutely": [
-              {
-                "dt": 1595243460,
-                "precipitation": 2.928
-              },
-              ...
-            },
-              "hourly": [
-              {
-                "dt": 1595242800,
-                "temp": 293.28,
-                "feels_like": 293.82,
-                "pressure": 1016,
-                "humidity": 100,
-                "dew_point": 293.28,
-                "clouds": 90,
-                "visibility": 10000,
-                "wind_speed": 4.6,
-                "wind_deg": 123,
-                "weather": [
-                  {
-                    "id": 501,
-                    "main": "Rain",
-                    "description": "moderate rain",
-                    "icon": "10n"
-                  }
-                ],
-                "pop": 0.99,
-                "rain": {
-                  "1h": 2.46
-                }
-              },
-              ...
-            }
-          "daily": [
-              {
-                "dt": 1595268000,
-                "sunrise": 1595243663,
-                "sunset": 1595296278,
-                "temp": {
-                  "day": 298.82,
-                  "min": 293.25,
-                  "max": 301.9,
-                  "night": 293.25,
-                  "eve": 299.72,
-                  "morn": 293.48
-                },
-                "feels_like": {
-                  "day": 300.06,
-                  "night": 292.46,
-                  "eve": 300.87,
-                  "morn": 293.75
-                },
-                "pressure": 1014,
-                "humidity": 82,
-                "dew_point": 295.52,
-                "wind_speed": 5.22,
-                "wind_deg": 146,
-                "weather": [
-                  {
-                    "id": 502,
-                    "main": "Rain",
-                    "description": "heavy intensity rain",
-                    "icon": "10d"
-                  }
-                ],
-                "clouds": 97,
-                "pop": 1,
-                "rain": 12.57,
-                "uvi": 10.64
-              },
-              ...
-              }
-              "
-              </pre
-          >
-        </section>
-        <section id="" class="main-section"></section>
-        <section id="" class="main-section"></section>
-        <section id="" class="main-section"></section>
-      </main>
+            ></code>
+            </section>
+            <section id="example_api_response" class="main-section">
+                <header>
+                    <h2>Example of API response</h2>
+                </header>
+                <pre>
+  {
+    "lat": 40.12,
+    "lon": -96.66,
+    "timezone": "America/Chicago",
+    "timezone_offset": -18000,
+    "current": {
+      "dt": 1595243443,
+      "sunrise": 1595243663,
+      "sunset": 1595296278,
+      "temp": 293.28,
+      "feels_like": 293.82,
+      "pressure": 1016,
+      "humidity": 100,
+      "dew_point": 293.28,
+      "uvi": 10.64,
+      "clouds": 90,
+      "visibility": 10000,
+      "wind_speed": 4.6,
+      "wind_deg": 310,
+      "weather": [
+        {
+          "id": 501,
+          "main": "Rain",
+          "description": "moderate rain",
+          "icon": "10n"
+        },
+        {
+          "id": 201,
+          "main": "Thunderstorm",
+          "description": "thunderstorm with rain",
+          "icon": "11n"
+        }
+      ],
+      "rain": {
+        "1h": 2.93
+      }
+    },
+    "minutely": [
+      {
+        "dt": 1595243460,
+        "precipitation": 2.928
+      },
+      ...
+    },
+    "hourly": [
+      {
+        "dt": 1595242800,
+        "temp": 293.28,
+        "feels_like": 293.82,
+        "pressure": 1016,
+        "humidity": 100,
+        "dew_point": 293.28,
+        "clouds": 90,
+        "visibility": 10000,
+        "wind_speed": 4.6,
+        "wind_deg": 123,
+        "weather": [
+          {
+            "id": 501,
+            "main": "Rain",
+            "description": "moderate rain",
+            "icon": "10n"
+          }
+        ],
+        "pop": 0.99,
+        "rain": {
+          "1h": 2.46
+        }
+      },
+      ...
+    }
+    "daily": [
+      {
+        "dt": 1595268000,
+        "sunrise": 1595243663,
+        "sunset": 1595296278,
+        "temp": {
+        "day": 298.82,
+        "min": 293.25,
+        "max": 301.9,
+        "night": 293.25,
+        "eve": 299.72,
+        "morn": 293.48
+      },
+      "feels_like": {
+        "day": 300.06,
+        "night": 292.46,
+        "eve": 300.87,
+        "morn": 293.75
+      },
+      "pressure": 1014,
+      "humidity": 82,
+      "dew_point": 295.52,
+      "wind_speed": 5.22,
+      "wind_deg": 146,
+      "weather": [
+        {
+          "id": 502,
+          "main": "Rain",
+          "description": "heavy intensity rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": 97,
+      "pop": 1,
+      "rain": 12.57,
+      "uvi": 10.64
+    },
+    ...
+  }
+              
+              </pre>
+            </section>
+            <section id="fields_api_response" class="main-section">
+                <header>Fields in API response</header>
+                <ul>
+                    <li><code>lat</code> Geographical coordinates of the location (latitude)</li>
+                    <li><code>lon</code> Geographical coordinates of the location (longitude)</li>
+                    <li><code>timezone</code> Timezone name fopr the requested location</li>
+                    <li><code>timezone_offset</code> Shift in seconds from UTC</li>
+                    <li><code>current</code><strong>Current weather data API response</strong></li>
+                    <ul>
+                        <li><code>current.dt</code> Current time, Unix, UTC</li>
+                        <li><code>current.sunrise</code> Sunrise time, Unix, UTC</li>
+                        <li><code>current.sunset</code> Sunset time, Unix, UTC</li>
+                        <li><code>current.temp</code> Temperature. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit
+                        </li>
+                        <li><code>current.feels_like</code> Temperature. This temperature parameter accounts for the human perception of weather. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>current.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                        <li><code>current.humidity</code> Humidity, %</li>
+                        <li><code>current.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    </ul>
+                </ul>
+
+
+            </section>
+            <section id="" class="main-section"></section>
+            <section id="" class="main-section"></section>
+        </main>
     </div>
-  </body>
+</body>
+
 </html>

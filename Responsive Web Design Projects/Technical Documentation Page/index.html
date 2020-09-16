@@ -54,6 +54,7 @@
             <section id="introduction" class="main-section">
                 <header>
                     <h2>Introduction</h2>
+                    <hr>
                 </header>
                 <p>
                     The "OpenWeatherMapAPI Guide" provides useful information, links, and documents to begin using the weather API services smoothly.
@@ -68,6 +69,7 @@
             <section id="one_cal_api" class="main-section">
                 <header>
                     <h2>One Call API</h2>
+                    <hr>
                 </header>
                 <p>
                     Make just one API call and receive all the latest updates on the weather near you with the new OpenWaether
@@ -87,6 +89,7 @@
             <section id="current_weather" class="main-section">
                 <header>
                     <h2>Current and forecast weather data</h2>
+                    <hr>
                 </header>
                 <p>
                     To get access to
@@ -97,6 +100,7 @@
             <section id="make_api_call" class="main-section">
                 <header>
                     <h2>How to make an API call</h2>
+                    <hr>
                 </header>
                 <p>API call:</p>
                 <code><b
@@ -128,6 +132,7 @@
             <section id="example_api_response" class="main-section">
                 <header>
                     <h2>Example of API response</h2>
+                    <hr>
                 </header>
                 <pre>
   {
@@ -261,12 +266,174 @@
                         <li><code>current.pressure</code> Atmospheric pressure on the sea level, hPa</li>
                         <li><code>current.humidity</code> Humidity, %</li>
                         <li><code>current.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>current.clouds</code> Cloudiness, %</li>
+                        <li><code>current.uvi</code> Midday UV index</li>
+                        <li><code>current.visibility</code> Average visibility, metres</li>
+                        <li><code>current.wind_speed</code> Wind speed. Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>current.wind_gust</code>Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>current.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                        <li><code>current.rain</code></li>
+                        <ul><li><code>current.rain.1h</code> Rain volume for last hour, mm</li></ul>
+                        <li><code>current.snow</code></li><ul><li><code>current.snow.1h</code> Snow volume for last hour, mm</li></ul>
+                        <li><code>current.weather</code></li>
+                        <ul>
+                          <li><code>current.weather.id</code> Weather condition id</li>
+                          <li><code>current.weather.description</code> Weather condition within the group.</li>
+                          <li><code>current.weather.icon</code> Weather icon id.</li>
+                        </ul>
+                    </ul>
+
+                    <ul>
+                      <li><code>minutely</code> <strong>Minute forecast weather data API response</strong></li>
+                      <ul>
+                        <li><code>minutely.dt</code> Time for the forecasted data, unix, UTC</li>
+                        <li><code>minutely.precipitation</code> Precipitation volume, mm</li>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li><code>hourly</code> <strong>Hourly forecast weather API response</strong></li>
+                      <ul>
+                        <li><code>horuly.dt</code> Time of the forecasted data, Unix, UTC</li>
+                        <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>hourly.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>hourly.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                        <li><code>hourly.humidity</code> Humidity, %</li>
+                        <li><code>hourly.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>hourly.clouds</code> Cloudiness, %</li>
+                        <li><code>hourly.visibility</code> Average visibility, metres</li>
+                        <li><code>hourly.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>hourly.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>chourly.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                        <li><code>hourly.pop</code> Probability of precipitation</li>
+                        <ul>
+                          <li><code>hourly.rain</code></li>
+                          <ul>
+                            <li><code>hourly.rain.1h</code> Rain volume for last hour, mm</li>
+                          </ul>
+                          <li><code>hourly.snow</code></li>
+                          <ul>
+                            <li><code>hourly.snow.1h</code> Rain volume for last hour, mm</li>
+                          </ul>
+                          <li><code>hourly.weather</code></li>
+                          <ul>
+                            <li><code>hourly.weather.id</code> Weather condition id</li>
+                            <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)</li>
+                            <li><code>hourly.weather.description</code> Weather conditon within the group.</li>
+                            <li><code>hourly.weather.icon</code> Weather icon id</li>
+                          </ul>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li><code>daily</code> <strong>Daily forecast weather data API response</strong></li>
+                      <ul>
+                        <li><code>daily.dt</code> Time of the forecasted data, Unix, UTC</li>
+                        <li><code>daily.sunrise</code> Sunrise time, Unix, UTC</li>
+                        <li><code>daily.sunset</code> Sunset time, Unix, UTC</li>
+                        <li><code>daily.temp</code> Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <ul>
+                          <li><code>daily.temp.morn</code> Morning temperature.</li>
+                          <li><code>daily.temp.day</code> Day temperature.</li>
+                          <li><code>daily.temp.eve</code> Evening temperature.</li>
+                          <li><code>daily.temp.night</code> Night temperature.</li>
+                          <li><code>daily.temp.min</code> Min daily temperature.</li>
+                          <li><code>daily.temp.max</code> Max daily temperature.</li>
+                        </ul>                        
+                        <li><code>daily.feels_like</code> This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <ul>
+                          <li><code>daily.feels_like.morn</code> Morning temperature.</li>
+                          <li><code>daily.feels_like.day</code> Day temperature.</li>
+                          <li><code>daily.feels_like.eve</code> Evening temperature.</li>
+                          <li><code>daily.feels_like.night</code> Night temperature.</li>
+                        </ul>
+                        <li><code>daily.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                        <li><code>daily.humidity</code> Humidity, %</li>
+                        <li><code>daily.dew_point</code>  Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>daily.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>daily.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                        <li><code>daily.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                        <li><code>daily.clouds</code> Cloudiness, %</li>
+                        <li><code>daily.uvi</code> Midday UV index</li>
+                        <li><code>daily.visibility</code> Average visbility, metres</li>
+                        <li><code>daily.pop</code> Probability of precipitation</li>
+                        <li><code>daily.rain</code> Precipitation volume, mm</li>
+                        <li><code>daily.snow</code> Snow volume, mm</li>
+                        <li><code>daily.weather</code></li>
+                        <ul>
+                          <li><code>daily.weather.id</code> Weather condition id</li>
+                          <li><code>daily.weather.main</code>  Group of weather parameters (Rain, Snow, Extreme etc.)</li>
+                          <li><code>daily.weather.description</code> Weather condition within the group</li>
+                          <li><code>daily.weather.icon</code> Weather icon id</li>
+                        </ul>
+                      </ul>
                     </ul>
                 </ul>
 
-
             </section>
-            <section id="" class="main-section">aaaa</section>
+            <section id="historical_weather_data" class="main-section">
+              <h2>Historical weather data</h2>
+              <hr>
+              <h3>How to make an API call</h3>
+              <p>API call:</p>
+              <code>https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={YOUR API KEY}</code>
+              <p><strong>lat, lon</strong> geographical coordinates (latitude, longitude)</p>
+              <p><strong>dt</strong> date from the <strong> previous five days</strong> (Unix time, UTC time zone), e.g. dt=1586468027</p>
+              <p><strong>API key</strong> unique API key</p>
+              <p>Example of API call:</p>
+              <code>http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=60.99&lon=30.9&dt=1586468027&appid={YOUR API KEY}</code>
+              <h3>Example of API Response</h3>
+              <pre>
+                {
+                  "lat": 60.99,
+                  "lon": 30.9,
+                  "timezone": "Europe/Moscow",
+                  "timezone_offset": 10800"
+                  "current": {
+                    "dt": 1586468027,
+                    "sunrise": 1586487424,
+                    "sunset": 1586538297,
+                    "temp": 274.31,
+                    "feels_like": 269.79,
+                    "pressure": 1006,
+                    "humidity": 72,
+                    "dew_point": 270.21,
+                    "clouds": 0,
+                    "visibility": 10000,
+                    "wind_speed": 3,
+                    "wind_deg": 260,
+                    "weather": [
+                      {
+                        "id": 800,
+                        "main": "Clear",
+                        "description": "clear sky",
+                        "icon": "01n"
+                      }
+                    ]
+                  },
+                  "hourly": [
+                    {
+                      "dt": 1586390400,
+                      "temp": 278.41,
+                      "feels_like": 269.43,
+                      "pressure": 1006,
+                      "humidity": 65,
+                      "dew_point": 272.46,
+                      "clouds": 0,
+                      "wind_speed": 9.83,
+                      "wind_deg": 60,
+                      "wind_gust": 15.65,
+                      "weather": [
+                        {
+                          "id": 800,
+                          "main": "Clear",
+                          "description": "clear sky",
+                          "icon": "01n"
+                        }
+                      ]
+                    },    ...
+                    }
+              </pre>
+            </section>
             <section id="" class="main-section"></section>
         </main>
     </div>

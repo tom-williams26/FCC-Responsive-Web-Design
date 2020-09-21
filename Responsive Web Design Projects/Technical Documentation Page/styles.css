@@ -102,11 +102,13 @@ pre {
 
 #check:checked~#nav-menu {
     left: 0;
+    position: fixed;
 }
 
 #main-doc {
     margin: 20px 30px 20px;
     color: #edf0f1;
+    width: 100vw;
 }
 
 .main-section {

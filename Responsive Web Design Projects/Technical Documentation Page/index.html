@@ -15,8 +15,8 @@
         <nav id="navbar">
             <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
+                <i class="fas fa-bars"></i>
+            </label>
             <header>
                 <h1 id="header-title">OpenWeatherMap API Guide</h1>
             </header>
@@ -40,10 +40,10 @@
                     <a href="#fields_api_response" class="nav-link">Fields in API response</a>
                 </li>
                 <li id="nav-item">
-                    <a href="#grid_template_rows" class="nav-link">Grid Template Rows</a>
+                    <a href="#historical_weather_data" class="nav-link">Historical Weather Data</a>
                 </li>
                 <li id="nav-item">
-                    <a href="#grid_template_areas" class="nav-link">Grid Template Areas</a>
+                    <a href="#historical_fields_api_response" class="nav-link">Historical Fields in API Response</a>
                 </li>
                 <li id="nav-item">
                     <a href="#grid_gap" class="nav-link">Grid Gap</a>
@@ -94,7 +94,7 @@
                 <p>
                     To get access to
                     <strong>current weather, minute forecast for 1 hour, hourly forecast for
-            48 hours and daily forecast for 7 days</strong>, please use this section of thje documentation.
+                        48 hours and daily forecast for 7 days</strong>, please use this section of thje documentation.
                 </p>
             </section>
             <section id="make_api_call" class="main-section">
@@ -262,7 +262,8 @@
                         <li><code>current.sunset</code> Sunset time, Unix, UTC</li>
                         <li><code>current.temp</code> Temperature. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit
                         </li>
-                        <li><code>current.feels_like</code> Temperature. This temperature parameter accounts for the human perception of weather. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                        <li><code>current.feels_like</code> Temperature. This temperature parameter accounts for the human perception of weather. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                        </li>
                         <li><code>current.pressure</code> Atmospheric pressure on the sea level, hPa</li>
                         <li><code>current.humidity</code> Humidity, %</li>
                         <li><code>current.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
@@ -335,7 +336,8 @@
                             <li><code>daily.dt</code> Time of the forecasted data, Unix, UTC</li>
                             <li><code>daily.sunrise</code> Sunrise time, Unix, UTC</li>
                             <li><code>daily.sunset</code> Sunset time, Unix, UTC</li>
-                            <li><code>daily.temp</code> Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                            <li><code>daily.temp</code> Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                            </li>
                             <ul>
                                 <li><code>daily.temp.morn</code> Morning temperature.</li>
                                 <li><code>daily.temp.day</code> Day temperature.</li>
@@ -366,7 +368,8 @@
                             <li><code>daily.weather</code></li>
                             <ul>
                                 <li><code>daily.weather.id</code> Weather condition id</li>
-                                <li><code>daily.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)</li>
+                                <li><code>daily.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)
+                                </li>
                                 <li><code>daily.weather.description</code> Weather condition within the group</li>
                                 <li><code>daily.weather.icon</code> Weather icon id</li>
                             </ul>
@@ -447,7 +450,8 @@
                     <li><code>lon</code> Geographical coordinates of the location (longitude)</li>
                     <li><code>timezone</code> Timezone name for the requested location</li>
                     <li><code>timezone_offset</code> Shift in seconds from UTC</li>
-                    <li><code>current</code> <strong>Data point <code>dt</code> refers to the requested time, rather than the current time</strong></li>
+                    <li><code>current</code> <strong>Data point <code>dt</code> refers to the requested time, rather
+                            than the current time</strong></li>
                     <ul>
                         <li><code>current.dt</code> Requested time, Unix, UTC</li>
                         <li><code>current.sunrise</code> Sunrise time, Unix, UTC</li>
@@ -468,13 +472,15 @@
                         <li><code>current.weather</code></li>
                         <ul>
                             <li><code>current.weather.id</code> Weather condition id</li>
-                            <li><code>current.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)</li>
+                            <li><code>current.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)
+                            </li>
                             <li><code>current.weather.description</code> Weather condition within the group</li>
                             <li><code>current.weather.icon</code> Weather icon id.</li>
                         </ul>
                     </ul>
                     <ul>
-                        <li><code>hourly</code><strong> Data block contains hourly historical data starting at 00:00 on the requested day and continues until 23:59 on the same day (UTC time)</strong></li>
+                        <li><code>hourly</code><strong> Data block contains hourly historical data starting at 00:00 on
+                                the requested day and continues until 23:59 on the same day (UTC time)</strong></li>
                         <ul>
                             <li><code>horuly.dt</code> Time of the historical data, Unix, UTC</li>
                             <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
@@ -492,7 +498,8 @@
                             <li><code>hourly.weather</code></li>
                             <ul>
                                 <li><code>hourly.weather.id</code> Weather condition id</li>
-                                <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)</li>
+                                <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)
+                                </li>
                                 <li><code>hourly.weather.description</code> Weather conditon within the group.</li>
                                 <li><code>hourly.weather.icon</code> Weather icon id</li>
                             </ul>

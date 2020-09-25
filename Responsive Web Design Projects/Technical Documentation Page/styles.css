@@ -6,7 +6,7 @@
 
 body {
     font-family: "Poppins", Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #24252a;
 }
 
@@ -117,13 +117,84 @@ pre {
 }
 
 .main-section h2 {
-    padding-bottom: 15px;
+    padding: 20px 0;
+}
+
+.main-section h3 {
+    border-bottom: 1px solid #F2F2F2;
+    line-height: 50px;
 }
 
 #one_cal_api ul {
     display: block;
     padding-left: 40px;
 }
+
+.api-call {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    color: black;
+    background-color: #f2f2f2;
+    margin: 10px 0px;
+    padding: 12px;
+}
+
+.api-call code {
+    /* overflow-wrap: break-word; */
+    word-break: break-word;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.material-table td,
+.material-table th {
+    padding: 8pt 4pt;
+    text-align: left;
+}
+
+.material-table td {
+    vertical-align: top;
+    font-weight: 300;
+    border-top: 1px solid #F2F2F2;
+}
+
+.material-table code {
+    font-family: monospace;
+    padding: 4px 4px;
+    border: 1px solid #D0D0D6;
+    border-radius: 2px;
+}
+
+.material-table .column-two {
+    margin-left: 4px;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+
+.material-table .column-three {
+    line-height: 30px;
+}
+
+
+/* .api-call .tools {
+    flex-basis: 15%;
+    align-items: center;
+    max-width: 65px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.tooltip-btn {
+    position: relative;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 4pt;
+    max-width: 24pt;
+    padding: 2pt;
+} */
 
 #make_api_call ul {
     display: block;

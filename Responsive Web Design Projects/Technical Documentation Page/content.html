@@ -17,7 +17,6 @@
     <section id="one_cal_api" class="main-section">
         <header>
             <h2>One Call API</h2>
-            <hr>
         </header>
         <p>
             Make just one API call and receive all the latest updates on the weather near you with the new OpenWaether
@@ -37,20 +36,18 @@
     <section id="current_weather" class="main-section">
         <header>
             <h2>Current and forecast weather data</h2>
-            <hr>
         </header>
         <p>
-            To get access to
-            <strong>current weather, minute forecast for 1 hour, hourly forecast for
-                48 hours and daily forecast for 7 days</strong>, please use this section of thje documentation.
+            To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours and daily forecast for 7 days, please use this section of thje documentation.
         </p>
     </section>
     <section id="make_api_call" class="main-section">
         <header>
             <h2>How to make an API call</h2>
-            <hr>
+
         </header>
-        <p>API call:</p>
+        <p>API call</p>
+        <hr>
         <code><b
       >https://api.openweathermap.org/data<br />/2.5/onecall?lat={lat}&lon={lon}&
       exclude={part}&appid={YOUR API KEY}</b
@@ -219,7 +216,8 @@
                 <li><code>current.uvi</code> Midday UV index</li>
                 <li><code>current.visibility</code> Average visibility, metres</li>
                 <li><code>current.wind_speed</code> Wind speed. Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
-                <li><code>current.wind_gust</code>Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                <li><code>current.wind_gust</code>Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                </li>
                 <li><code>current.wind_deg</code> Wind direction, degrees (meteorological)</li>
                 <li><code>current.rain</code></li>
                 <ul>
@@ -248,7 +246,8 @@
                 <li><code>hourly</code> <strong>Hourly forecast weather API response</strong></li>
                 <ul>
                     <li><code>horuly.dt</code> Time of the forecasted data, Unix, UTC</li>
-                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
                     <li><code>hourly.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
                     <li><code>hourly.pressure</code> Atmospheric pressure on the sea level, hPa</li>
                     <li><code>hourly.humidity</code> Humidity, %</li>
@@ -271,7 +270,8 @@
                         <li><code>hourly.weather</code></li>
                         <ul>
                             <li><code>hourly.weather.id</code> Weather condition id</li>
-                            <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)</li>
+                            <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)
+                            </li>
                             <li><code>hourly.weather.description</code> Weather conditon within the group.</li>
                             <li><code>hourly.weather.icon</code> Weather icon id</li>
                         </ul>
@@ -305,7 +305,8 @@
                     <li><code>daily.humidity</code> Humidity, %</li>
                     <li><code>daily.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
                     <li><code>daily.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
-                    <li><code>daily.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>daily.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                    </li>
                     <li><code>daily.wind_deg</code> Wind direction, degrees (meteorological)</li>
                     <li><code>daily.clouds</code> Cloudiness, %</li>
                     <li><code>daily.uvi</code> Midday UV index</li>
@@ -333,7 +334,8 @@
         <p>API call:</p>
         <code>https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={YOUR API KEY}</code>
         <p><strong>lat, lon</strong> geographical coordinates (latitude, longitude)</p>
-        <p><strong>dt</strong> date from the <strong> previous five days</strong> (Unix time, UTC time zone), e.g. dt=1586468027</p>
+        <p><strong>dt</strong> date from the <strong> previous five days</strong> (Unix time, UTC time zone), e.g. dt=1586468027
+        </p>
         <p><strong>API key</strong> unique API key</p>
         <p>Example of API call:</p>
         <code>http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=60.99&lon=30.9&dt=1586468027&appid={YOUR API KEY}</code>
@@ -412,7 +414,8 @@
                 <li><code>current.clouds</code> Cloudiness, %</li>
                 <li><code>current.uvi</code> Midday UV index</li>
                 <li><code>current.visibility</code> Average visibility, metres</li>
-                <li><code>current.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                <li><code>current.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                </li>
                 <li><code>current.wind_gust</code> Wind gust. Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
                 <li><code>current.wind_deg</code> Wind direction, degrees (meteorological)</li>
                 <li><code>current.rain</code> Precipitation volume, mm</li>
@@ -431,7 +434,8 @@
                         the requested day and continues until 23:59 on the same day (UTC time)</strong></li>
                 <ul>
                     <li><code>horuly.dt</code> Time of the historical data, Unix, UTC</li>
-                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
                     <li><code>hourly.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
                     <li><code>hourly.pressure</code> Atmospheric pressure on the sea level, hPa</li>
                     <li><code>hourly.humidity</code> Humidity, %</li>

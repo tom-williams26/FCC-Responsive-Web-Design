@@ -11,156 +11,156 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <nav id="navbar">
-            <input type="checkbox" id="check" />
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
+    <nav id="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <header>
+            <h1 id="header-title">OpenWeatherMap API Guide</h1>
+        </header>
+        <ul id="nav-menu">
+            <li id="nav-item">
+                <a href="#introduction" class="nav-link active">Introduction</a>
+            </li>
+            <li id="nav-item">
+                <a href="#one_cal_api" class="nav-link">One Call API</a>
+            </li>
+            <li id="nav-item">
+                <a href="#current_weather" class="nav-link">Current and forecast weather data</a>
+            </li>
+            <li id="nav-item">
+                <a href="#make_api_call" class="nav-link">How to make an API call</a>
+            </li>
+            <li id="nav-item">
+                <a href="#example_api_response" class="nav-link">Example of API response</a>
+            </li>
+            <li id="nav-item">
+                <a href="#fields_api_response" class="nav-link">Fields in API response</a>
+            </li>
+            <li id="nav-item">
+                <a href="#historical_weather_data" class="nav-link">Historical Weather Data</a>
+            </li>
+            <li id="nav-item">
+                <a href="#historical_fields_api_response" class="nav-link">Historical Fields in API Response</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
             <header>
-                <h1 id="header-title">OpenWeatherMap API Guide</h1>
+                <h2>Introduction</h2>
             </header>
-            <ul id="nav-menu">
-                <li id="nav-item">
-                    <a href="#introduction" class="nav-link active">Introduction</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#one_cal_api" class="nav-link">One Call API</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#current_weather" class="nav-link">Current and forecast weather data</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#make_api_call" class="nav-link">How to make an API call</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#example_api_response" class="nav-link">Example of API response</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#fields_api_response" class="nav-link">Fields in API response</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#historical_weather_data" class="nav-link">Historical Weather Data</a>
-                </li>
-                <li id="nav-item">
-                    <a href="#historical_fields_api_response" class="nav-link">Historical Fields in API Response</a>
-                </li>
+            <p>
+                The "OpenWeatherMapAPI Guide" provides useful information, links, and documents to begin using the weather API services smoothly.
+            </p>
+            <p>
+                OpenWeatherMap is one of the leading digital weather information providers and consists of a small Techincal team that specialises in Big Data, data processing, and satelite imagery processing.
+            </p>
+            <p>
+                OpenWeatherMap serves over two million users and an average of two thousand users sign up each day. OpenWeatherMap have a close partnership with Google who use the service for managing advertising campaigns.
+            </p>
+        </section>
+        <section id="one_call_api" class="main-section">
+            <header>
+                <h2>One Call API</h2>
+            </header>
+            <p>
+                Make just one API call and receive all the latest updates on the weather near you with the new OpenWaether
+                <strong>One Call API.</strong>
+            </p>
+            <p>
+                The One Call API provides the following weather data for any geographical coordinates:
+            </p>
+            <ul>
+                <li>Current weather</li>
+                <li>Hourly forecast</li>
+                <li>Daily forecast for 48 hours</li>
+                <li>Daily forecast for 7 days</li>
+                <li>Historical weather data for the previous 5 days</li>
             </ul>
-        </nav>
-        <main id="main-doc">
-            <section id="introduction" class="main-section">
-                <header>
-                    <h2>Introduction</h2>
-                </header>
-                <p>
-                    The "OpenWeatherMapAPI Guide" provides useful information, links, and documents to begin using the weather API services smoothly.
-                </p>
-                <p>
-                    OpenWeatherMap is one of the leading digital weather information providers and consists of a small Techincal team that specialises in Big Data, data processing, and satelite imagery processing.
-                </p>
-                <p>
-                    OpenWeatherMap serves over two million users and an average of two thousand users sign up each day. OpenWeatherMap have a close partnership with Google who use the service for managing advertising campaigns.
-                </p>
-            </section>
-            <section id="one_cal_api" class="main-section">
-                <header>
-                    <h2>One Call API</h2>
-                </header>
-                <p>
-                    Make just one API call and receive all the latest updates on the weather near you with the new OpenWaether
-                    <strong>One Call API.</strong>
-                </p>
-                <p>
-                    The One Call API provides the following weather data for any geographical coordinates:
-                </p>
-                <ul>
-                    <li>Current weather</li>
-                    <li>Hourly forecast</li>
-                    <li>Daily forecast for 48 hours</li>
-                    <li>Daily forecast for 7 days</li>
-                    <li>Historical weather data for the previous 5 days</li>
-                </ul>
-            </section>
-            <section id="current_weather" class="main-section">
-                <header>
-                    <h2>Current and forecast weather data</h2>
-                </header>
-                <p>
-                    To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours and daily forecast for 7 days, please use this section of the documentation.
-                </p>
-            </section>
-            <section id="make_api_call" class="main-section">
-                <header>
-                    <h2>How to make an API call</h2>
-
-                </header>
-                <h3>API call</h3>
-                <div class="api-call">
-                    <code>
+        </section>
+        <section id="current_weather" class="main-section">
+            <header>
+                <h2>Current and forecast weather data</h2>
+            </header>
+            <p>
+                To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours and daily forecast for 7 days, please use this section of the documentation.
+            </p>
+        </section>
+        <section id="make_api_call" class="main-section">
+            <header>
+                <h2>How to make an API call</h2>
+            </header>
+            <p>To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.</p>
+            <h3>API call</h3>
+            <div class="api-call">
+                <code>
               https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&
               exclude={part}&appid={YOUR API KEY}</code>
-                    <div class="tools"><button class="tooltip-btn">
-                            <div class="tooltip-docs"></div>
-                        </button></div>
-                    <i class="fas fa-copy"></i>
-                </div>
-                <table class="material-table">
-                    <tbody>
-                        <tr>
-                            <th>Parameters</th>
-                        </tr>
-                        <tr>
-                            <td><code>lat, lon</code></td>
-                            <td class="column-two">required</td>
-                            <td class="column-three">Geographical coordinates (latitude, longitude)</td>
-                        </tr>
-                        <tr>
-                            <td><code>appid</code></td>
-                            <td class="column-two">required</td>
-                            <td class="column-three">Your unique API key</td>
-                        </tr>
-                        <tr>
-                            <td><code>exclude</code></td>
-                            <td class="column-two">optional</td>
-                            <td class="column-three">By using this parameter you can exclude some parts of the weather data from the API response It should be a comma-delimited list (without spaces). Available values:
-                                <ul>
-                                    <li>
-                                        <code>current</code></li>
-                                    <li><code>minutely</code></li>
-                                    <li><code>hourly</code></li>
-                                    <li>
-                                        <code>daily</code>
-                                    </li>
-                                    <li><code>alerts</code></li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><code>units</code></td>
-                            <td class="column-two">optional</td>
-                            <td class="column-three">Units of measurement. <code>standard</code>, <code>metric</code> and <code>imperial</code> units are available. If you do not use the <code>units</code> parameter, <code>standard</code> units will be applied by default. </td>
-                        </tr>
-                        <tr>
-                            <td><code>lang</code></td>
-                            <td class="column-two">optional</td>
-                            <td class="column-three">You can use the <code>lang</code> parameter to get the output in your language.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="tools"><button class="tooltip-btn">
+                        <div class="tooltip-docs"></div>
+                    </button></div>
+                <i class="fas fa-copy"></i>
+            </div>
+            <table class="material-table">
+                <tbody>
+                    <tr>
+                        <th>Parameters</th>
+                    </tr>
+                    <tr>
+                        <td><code>lat, lon</code></td>
+                        <td class="column-two">required</td>
+                        <td class="column-three">Geographical coordinates (latitude, longitude)</td>
+                    </tr>
+                    <tr>
+                        <td><code>appid</code></td>
+                        <td class="column-two">required</td>
+                        <td class="column-three">Your unique API key</td>
+                    </tr>
+                    <tr>
+                        <td><code>exclude</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">By using this parameter you can exclude some parts of the weather data from the API response It should be a comma-delimited list (without spaces). Available values:
+                            <ul>
+                                <li>
+                                    <code>current</code></li>
+                                <li><code>minutely</code></li>
+                                <li><code>hourly</code></li>
+                                <li>
+                                    <code>daily</code>
+                                </li>
+                                <li><code>alerts</code></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>units</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">Units of measurement. <code>standard</code>, <code>metric</code> and
+                            <code>imperial</code> units are available. If you do not use the <code>units</code> parameter, <code>standard</code> units will be applied by default. </td>
+                    </tr>
+                    <tr>
+                        <td><code>lang</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">You can use the <code>lang</code> parameter to get the output in your language.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h3>Example of an API call</h3>
-                <div class="api-call">
-                    <code>
+            <h3>Example of an API call</h3>
+            <div class="api-call">
+                <code>
                         https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&appid={API key}</code>
-                    <div class="tools"><button class="tooltip-btn">
-                            <div class="tooltip-docs"></div>
-                        </button></div>
-                    <i class="fas fa-copy"></i>
-                </div>
-                <h3>Example of API response</h3>
+                <div class="tools"><button class="tooltip-btn">
+                        <div class="tooltip-docs"></div>
+                    </button></div>
+                <i class="fas fa-copy"></i>
+            </div>
+            <h3>Example of API response</h3>
 
-                <pre>
+            <pre>
 {
     "lat": 40.12,
     "lon": -96.66,
@@ -270,13 +270,355 @@
     "uvi": 10.64
     },
     ...
-}
+},
+"alerts": [
+    {
+      "sender_name": "NWS Tulsa (Eastern Oklahoma)",
+      "event": "Heat Advisory",
+      "start": 1597341600,
+      "end": 1597366800,
+      "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
+    },
+    ...
+  ]
                           
                           </pre>
-            </section>
+        </section>
+        <section id="fields_api_response" class="main-section">
+            <header>
+                <h3>Fields in API response</h3>
+            </header>
+            <ul>
+                <li><code>lat</code> Geographical coordinates of the location (latitude)</li>
+                <li><code>lon</code> Geographical coordinates of the location (longitude)</li>
+                <li><code>timezone</code> Timezone name fopr the requested location</li>
+                <li><code>timezone_offset</code> Shift in seconds from UTC</li>
+                <li><code>current</code><strong> Current weather data API response</strong></li>
+                <ul>
+                    <li><code>current.dt</code> Current time, Unix, UTC</li>
+                    <li><code>current.sunrise</code> Sunrise time, Unix, UTC</li>
+                    <li><code>current.sunset</code> Sunset time, Unix, UTC</li>
+                    <li><code>current.temp</code> Temperature. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit
+                    </li>
+                    <li><code>current.feels_like</code> Temperature. This temperature parameter accounts for the human perception of weather. Units - default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
+                    <li><code>current.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                    <li><code>current.humidity</code> Humidity, %</li>
+                    <li><code>current.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>current.clouds</code> Cloudiness, %</li>
+                    <li><code>current.uvi</code> Midday UV index</li>
+                    <li><code>current.visibility</code> Average visibility, metres</li>
+                    <li><code>current.wind_speed</code> Wind speed. Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>current.wind_gust</code>Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                    </li>
+                    <li><code>current.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                    <li><code>current.rain</code></li>
+                    <ul>
+                        <li><code>current.rain.1h</code> Rain volume for last hour, mm</li>
+                    </ul>
+                    <li><code>current.snow</code></li>
+                    <ul>
+                        <li><code>current.snow.1h</code> Snow volume for last hour, mm</li>
+                    </ul>
+                    <li><code>current.weather</code></li>
+                    <ul>
+                        <li><code>current.weather.id</code> Weather condition id</li>
+                        <li><code>current.weather.description</code> Weather condition within the group.</li>
+                        <li><code>current.weather.icon</code> Weather icon id.</li>
+                    </ul>
+                </ul>
 
-        </main>
-    </div>
+
+                <li><code>minutely</code> <strong>Minute forecast weather data API response</strong></li>
+                <ul>
+                    <li><code>minutely.dt</code> Time for the forecasted data, unix, UTC</li>
+                    <li><code>minutely.precipitation</code> Precipitation volume, mm</li>
+                </ul>
+
+
+                <li><code>hourly</code> <strong>Hourly forecast weather API response</strong></li>
+                <ul>
+                    <li><code>horuly.dt</code> Time of the forecasted data, Unix, UTC</li>
+                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
+                    <li><code>hourly.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                    <li><code>hourly.humidity</code> Humidity, %</li>
+                    <li><code>hourly.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.clouds</code> Cloudiness, %</li>
+                    <li><code>hourly.visibility</code> Average visibility, metres</li>
+                    <li><code>hourly.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>hourly.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>hourly.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                    <li><code>hourly.pop</code> Probability of precipitation</li>
+
+                    <li><code>hourly.rain</code></li>
+                    <ul>
+                        <li><code>hourly.rain.1h</code> Rain volume for last hour, mm</li>
+                    </ul>
+                    <li><code>hourly.snow</code></li>
+                    <ul>
+                        <li><code>hourly.snow.1h</code> Rain volume for last hour, mm</li>
+                    </ul>
+                    <li><code>hourly.weather</code></li>
+                    <ul>
+                        <li><code>hourly.weather.id</code> Weather condition id</li>
+                        <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)
+                        </li>
+                        <li><code>hourly.weather.description</code> Weather conditon within the group.</li>
+                        <li><code>hourly.weather.icon</code> Weather icon id</li>
+                    </ul>
+
+                </ul>
+
+
+                <li><code>daily</code> <strong>Daily forecast weather data API response</strong></li>
+                <ul>
+                    <li><code>daily.dt</code> Time of the forecasted data, Unix, UTC</li>
+                    <li><code>daily.sunrise</code> Sunrise time, Unix, UTC</li>
+                    <li><code>daily.sunset</code> Sunset time, Unix, UTC</li>
+                    <li><code>daily.temp</code> Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
+                    <ul>
+                        <li><code>daily.temp.morn</code> Morning temperature.</li>
+                        <li><code>daily.temp.day</code> Day temperature.</li>
+                        <li><code>daily.temp.eve</code> Evening temperature.</li>
+                        <li><code>daily.temp.night</code> Night temperature.</li>
+                        <li><code>daily.temp.min</code> Min daily temperature.</li>
+                        <li><code>daily.temp.max</code> Max daily temperature.</li>
+                    </ul>
+                    <li><code>daily.feels_like</code> This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <ul>
+                        <li><code>daily.feels_like.morn</code> Morning temperature.</li>
+                        <li><code>daily.feels_like.day</code> Day temperature.</li>
+                        <li><code>daily.feels_like.eve</code> Evening temperature.</li>
+                        <li><code>daily.feels_like.night</code> Night temperature.</li>
+                    </ul>
+                    <li><code>daily.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                    <li><code>daily.humidity</code> Humidity, %</li>
+                    <li><code>daily.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>daily.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>daily.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                    </li>
+                    <li><code>daily.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                    <li><code>daily.clouds</code> Cloudiness, %</li>
+                    <li><code>daily.uvi</code> Midday UV index</li>
+                    <li><code>daily.visibility</code> Average visbility, metres</li>
+                    <li><code>daily.pop</code> Probability of precipitation</li>
+                    <li><code>daily.rain</code> Precipitation volume, mm</li>
+                    <li><code>daily.snow</code> Snow volume, mm</li>
+                    <li><code>daily.weather</code></li>
+                    <ul>
+                        <li><code>daily.weather.id</code> Weather condition id</li>
+                        <li><code>daily.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)
+                        </li>
+                        <li><code>daily.weather.description</code> Weather condition within the group</li>
+                        <li><code>daily.weather.icon</code> Weather icon id</li>
+                    </ul>
+
+                </ul>
+                <li><code>alerts</code><strong> Goverment weather alerts data from major national weather warning
+                        systems</strong></li>
+                <ul>
+                    <li><code>alerts.sender.name</code> Name of alert source</li>
+                    <li><code>alerts.event</code> Alert event name</li>
+                    <li><code>alerts.start</code> Date and time of the start of the alert, Unix, UTC</li>
+                    <li><code>alerts.end</code> Date and time of the end of the alert, Unix, UTC</li>
+                    <li><code>alerts.description</code> Description of the alert</li>
+                </ul>
+            </ul>
+
+        </section>
+        <section id="historical_weather_data" class="main-section">
+            <header>
+                <h2>Historical weather data</h2>
+            </header>
+            <p>To learn about how get access to historical weather data for the <strong>previous 5 days</strong>, please use this section of the documentation.</p>
+            <h2>How to make an API call</h2>
+            <h3>API call:</h3>
+            <div class="api-call">
+                <code>https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={YOUR API KEY}</code>
+                <div class="tools"><button class="tooltip-btn">
+                        <div class="tooltip-docs"></div>
+                    </button></div>
+                <i class="fas fa-copy"></i>
+            </div>
+            <table class="material-table">
+                <tbody>
+                    <tr>
+                        <th>Parameters</th>
+                    </tr>
+                    <tr>
+                        <td><code>lat, lon</code></td>
+                        <td class="column-two">required</td>
+                        <td class="column-three">Geographical coordinates (latitude, longitude)</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><code>dt</code></td>
+                        <td class="column-two">required</td>
+                        <td class="column-three">date from the <strong> previous five days</strong> (Unix time, UTC time zone), e.g. dt=1586468027</td>
+                    </tr>
+                    <tr>
+                        <td><code>appid</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">unique API key</td>
+                    </tr>
+                    <tr>
+                        <td><code>units</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">Units of measurement. <code>standard</code>, <code>metric</code> and
+                            <code>imperial</code> units are available. If you do not use the <code>units</code> parameter, <code>standard</code> units will be applied by default. </td>
+                    </tr>
+                    <tr>
+                        <td><code>lang</code></td>
+                        <td class="column-two">optional</td>
+                        <td class="column-three">You can use the <code>lang</code> parameter to get the output in your language.
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <hr>
+            <h3>Example of API call:</h3>
+            <div class="api-call">
+                <code>http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=60.99&lon=30.9&dt=1586468027&appid={YOUR API KEY}</code>
+                <div class="tools"><button class="tooltip-btn">
+                        <div class="tooltip-docs"></div>
+                    </button></div>
+                <i class="fas fa-copy"></i>
+            </div>
+            <h3>Example of API Response</h3>
+            <pre>
+    {
+    "lat": 60.99,
+    "lon": 30.9,
+    "timezone": "Europe/Moscow",
+    "timezone_offset": 10800"
+    "current": {
+    "dt": 1586468027,
+    "sunrise": 1586487424,
+    "sunset": 1586538297,
+    "temp": 274.31,
+    "feels_like": 269.79,
+    "pressure": 1006,
+    "humidity": 72,
+    "dew_point": 270.21,
+    "clouds": 0,
+    "visibility": 10000,
+    "wind_speed": 3,
+    "wind_deg": 260,
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+      }
+    ]
+    },
+    "hourly": [
+    {
+      "dt": 1586390400,
+      "temp": 278.41,
+      "feels_like": 269.43,
+      "pressure": 1006,
+      "humidity": 65,
+      "dew_point": 272.46,
+      "clouds": 0,
+      "wind_speed": 9.83,
+      "wind_deg": 60,
+      "wind_gust": 15.65,
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ]
+    },    ...
+    ]
+    }
+          </pre>
+        </section>
+        <section id="fields_api_response" class="main-section">
+            <h3>Fields in API response</h3>
+            <ul>
+                <li><code>lat</code> Geographical coordinates of the location (latitude)</li>
+                <li><code>lon</code> Geographical coordinates of the location (longitude)</li>
+                <li><code>timezone</code> Timezone name for the requested location</li>
+                <li><code>timezone_offset</code> Shift in seconds from UTC</li>
+                <li><code>current</code> <strong>Data point <code>dt</code> refers to the requested time, rather
+                        than the current time</strong></li>
+                <ul>
+                    <li><code>current.dt</code> Requested time, Unix, UTC</li>
+                    <li><code>current.sunrise</code> Sunrise time, Unix, UTC</li>
+                    <li><code>current.sunset</code> Sunset time, Unix, UTC</li>
+                    <li><code>current.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit. </li>
+                    <li><code>current.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>current.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                    <li><code>current.humidity</code> Humidity, %</li>
+                    <li><code>current.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>current.clouds</code> Cloudiness, %</li>
+                    <li><code>current.uvi</code> Midday UV index</li>
+                    <li><code>current.visibility</code> Average visibility, metres</li>
+                    <li><code>current.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.
+                    </li>
+                    <li><code>current.wind_gust</code> Wind gust. Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>current.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                    <li><code>current.rain</code> Precipitation volume, mm</li>
+                    <li><code>current.snow</code> Snow volume, mm</li>
+                    <li><code>current.weather</code></li>
+                    <ul>
+                        <li><code>current.weather.id</code> Weather condition id</li>
+                        <li><code>current.weather.main</code> Group of weather parameters (Rain, Snow, Extreme etc.)
+                        </li>
+                        <li><code>current.weather.description</code> Weather condition within the group</li>
+                        <li><code>current.weather.icon</code> Weather icon id.</li>
+                    </ul>
+                </ul>
+
+                <li><code>hourly</code><strong> Data block contains hourly historical data starting at 00:00 on
+                        the requested day and continues until 23:59 on the same day (UTC time)</strong></li>
+                <ul>
+                    <li><code>horuly.dt</code> Time of the historical data, Unix, UTC</li>
+                    <li><code>hourly.temp</code> Temperature. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.
+                    </li>
+                    <li><code>hourly.feels_like</code> Temperature. This accounts for the human perception of weather. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.pressure</code> Atmospheric pressure on the sea level, hPa</li>
+                    <li><code>hourly.humidity</code> Humidity, %</li>
+                    <li><code>hourly.dew_point</code> Atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form. Units – default: kelvin, metric: Celsius, imperial: Fahrenheit.</li>
+                    <li><code>hourly.clouds</code> Cloudiness, %</li>
+                    <li><code>hourly.visibility</code> Average visibility, metres</li>
+                    <li><code>hourly.wind_speed</code> Wind speed. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>hourly.wind_gust</code> Wind gust. Units – default: metre/sec, metric: metre/sec, imperial: miles/hour.</li>
+                    <li><code>hourly.wind_deg</code> Wind direction, degrees (meteorological)</li>
+                    <li><code>hourly.rain</code> Precipitation volume, mm</li>
+                    <li><code>hourly.snow</code> Snow volume, mm</li>
+                    <li><code>hourly.weather</code></li>
+                    <ul>
+                        <li><code>hourly.weather.id</code> Weather condition id</li>
+                        <li><code>hourly.weather.main</code> Group of weather parameters (rain, Snow, Extreme etc.)
+                        </li>
+                        <li><code>hourly.weather.description</code> Weather conditon within the group.</li>
+                        <li><code>hourly.weather.icon</code> Weather icon id</li>
+                    </ul>
+                </ul>
+
+            </ul>
+
+            </ul>
+        </section>
+        <section class="footer">
+            <p>Original documentation can be found here
+                <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap.org</a> One Call API section.
+            </p>
+            <p>This project is intended for educational purposes only and is a part of FreeCodeCamp responsive web design curriculum.</p>
+            <p>Created by Tom Williams</p>
+        </section>
+    </main>
 </body>
 
-</html>
+</html>/*

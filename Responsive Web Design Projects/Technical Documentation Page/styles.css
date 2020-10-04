@@ -30,9 +30,9 @@
                 }
                 
                 #navbar {
-                    position: fixed;
                     background: #0082e6;
                     width: 100%;
+                    height: 100%;
                     top: 0px;
                     display: flex;
                     flex-wrap: wrap;
@@ -46,15 +46,15 @@
                     padding: 0 20px 0 20px;
                     font-weight: bold;
                     text-align: center;
+                    display: block;
                 }
                 
                 #navbar #nav-menu {
-                    position: fixed;
                     background: #2c3e50;
                     width: 100%;
                     text-align: center;
                     list-style: none;
-                    height: 120px;
+                    height: 100px;
                     overflow-y: scroll;
                 }
                 
@@ -75,27 +75,9 @@
                     width: 100%;
                 }
                 
-                .checkbtn {
-                    display: block;
-                    font-size: 30px;
-                    color: #edf0f1;
-                    float: left;
-                    line-height: 80px;
-                    margin-left: 25px;
-                    cursor: pointer;
-                }
-                
-                #check {
-                    display: none;
-                }
-                
-                #check:checked~#nav-menu {
-                    left: 0;
-                }
-                
                 #main-doc {
-                    margin: 80px 10px 10px;
-                    padding: 30px 20px 5px;
+                    margin: 15px 10px 10px;
+                    padding: 10px 20px 5px;
                     color: #edf0f1;
                     z-index: 999;
                 }
@@ -191,10 +173,14 @@
                 @media only screen and (min-width: 768px) {
                     #navbar {
                         height: 100px;
+                        float: left;
                     }
                     #header-title {
                         font-size: 20px;
                         margin: 10px;
+                    }
+                    #navbar #nav-menu {
+                        float: left;
                     }
                     #navbar #nav-menu #nav-item {
                         line-height: 50px;
@@ -203,10 +189,6 @@
                         font-size: 20px;
                         padding: 40px 10px;
                         line-height: 30px;
-                    }
-                    .checkbtn {
-                        font-size: 40px;
-                        margin: 10px 0 0 40px;
                     }
                     #main-doc {
                         margin: 80px 50px 20px;
@@ -260,9 +242,6 @@
                     #navbar #nav-menu #nav-item .nav-link {
                         font-size: 18px;
                         padding: 25px 10px;
-                    }
-                    .checkbtn {
-                        display: none;
                     }
                     #main-doc {
                         margin: 0px 50px 20px;

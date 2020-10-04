@@ -21,31 +21,35 @@
         </header>
         <ul id="nav-menu">
             <li id="nav-item">
-                <a href="#introduction" class="nav-link active">Introduction</a>
+                <a href="#Introduction" class="nav-link">Introduction</a>
             </li>
             <li id="nav-item">
-                <a href="#one_call_api" class="nav-link">One Call API</a>
+                <a href="#One_Call_API" class="nav-link">One Call API</a>
             </li>
             <li id="nav-item">
-                <a href="#current_weather" class="nav-link">Current and forecast weather data</a>
+                <a href="#Current_and_forecast_weather_data" class="nav-link">Current and forecast weather data</a>
             </li>
             <li id="nav-item">
-                <a href="#make_api_call" class="nav-link">How to make an API call</a>
+                <a href="#Fields_API_response_for_current_weather" class="nav-link">Fields API response for current
+                    weather</a>
             </li>
             <li id="nav-item">
-                <a href="#fields_api_response" class="nav-link">Example of API response</a>
+                <a href="#Historical_weather_data" class="nav-link">Historical Weather Data</a>
             </li>
             <li id="nav-item">
-                <a href="#fields_api_response" class="nav-link">Fields in API response</a>
+                <a href="#Fields_API_response_for_historical_weather" class="nav-link">Fields API response for
+                    historical
+                    weather</a>
             </li>
             <li id="nav-item">
-                <a href="#historical_weather_data" class="nav-link">Historical Weather Data</a>
+                <a href="#Disclaimer" class="nav-link">Disclaimer</a>
             </li>
+
 
         </ul>
     </nav>
     <main id="main-doc">
-        <section id="introduction" class="main-section">
+        <section id="Introduction" class="main-section">
             <header>
                 <h2>Introduction</h2>
             </header>
@@ -59,7 +63,7 @@
                 OpenWeatherMap serves over two million users and an average of two thousand users sign up each day. OpenWeatherMap have a close partnership with Google who use the service for managing advertising campaigns.
             </p>
         </section>
-        <section id="one_call_api" class="main-section">
+        <section id="One_Call_API" class="main-section">
             <header>
                 <h2>One Call API</h2>
             </header>
@@ -78,18 +82,14 @@
                 <li>Historical weather data for the previous 5 days</li>
             </ul>
         </section>
-        <section id="current_weather" class="main-section">
+        <section id="Current_and_forecast_weather_data" class="main-section">
             <header>
                 <h2>Current and forecast weather data</h2>
             </header>
             <p>
                 To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours and daily forecast for 7 days, please use this section of the documentation.
             </p>
-        </section>
-        <section id="make_api_call" class="main-section">
-            <header>
-                <h2>How to make an API call</h2>
-            </header>
+            <h3>How to make an API call</h3>
             <p>To get access to current weather, minute forecast for 1 hour, hourly forecast for 48 hours, daily forecast for 7 days and government weather alerts, please use this section of the documentation.</p>
             <h3>API call</h3>
             <div class="api-call">
@@ -146,7 +146,6 @@
                     </tr>
                 </tbody>
             </table>
-
             <h3>Example of an API call</h3>
             <div class="api-call">
                 <code>
@@ -282,9 +281,9 @@
                           
                           </pre>
         </section>
-        <section id="fields_api_response" class="main-section">
+        <section id="Fields_API_response_for_current_weather" class="main-section">
             <header>
-                <h3>Fields in API response</h3>
+                <h3>Fields API response for current weather</h3>
             </header>
             <ul>
                 <li><code>lat</code> Geographical coordinates of the location (latitude)</li>
@@ -427,7 +426,7 @@
             </ul>
 
         </section>
-        <section id="historical_weather_data" class="main-section">
+        <section id="Historical_weather_data" class="main-section">
             <header>
                 <h2>Historical weather data</h2>
             </header>
@@ -541,8 +540,10 @@
     }
           </pre>
         </section>
-        <section id="fields_api_response" class="main-section">
-            <h3>Fields in API response</h3>
+        <section id="Fields_API_response_for_historical_weather" class="main-section">
+            <header>
+                <h3>Fields API response for historical weather</h3>
+            </header>
             <ul>
                 <li><code>lat</code> Geographical coordinates of the location (latitude)</li>
                 <li><code>lon</code> Geographical coordinates of the location (longitude)</li>
@@ -608,15 +609,20 @@
             </ul>
 
             </ul>
+            <section id="Disclaimer" class="main-section">
+                <header>
+                    <h2>Disclaimer</h2>
+                </header>
+                <p>Original documentation can be found here
+                    <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap.org</a> One Call API section.
+                </p>
+                <p>This project is intended for educational purposes only and is a part of FreeCodeCamp responsive web design curriculum.</p>
+                <p>Created by Tom Williams</p>
+            </section>
         </section>
-        <section class="footer">
-            <p>Original documentation can be found here
-                <a href="https://openweathermap.org/api/one-call-api">OpenWeatherMap.org</a> One Call API section.
-            </p>
-            <p>This project is intended for educational purposes only and is a part of FreeCodeCamp responsive web design curriculum.</p>
-            <p>Created by Tom Williams</p>
-        </section>
+
     </main>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-</html>/*
+</html>

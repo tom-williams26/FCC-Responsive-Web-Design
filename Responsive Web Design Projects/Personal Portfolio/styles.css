@@ -1,0 +1,32 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: poppins, Arial, Helvetica, sans-serif;
+    }
+    
+    #navbar {
+        height: 80px;
+        background-color: dimgray;
+        display: flex;
+    }
+    
+    #navbar #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    #navbar #nav-menu #nav-item {
+        display: block;
+        width: 100%;
+        margin
+    }
+    
+    #navbar #nav-menu #nav-item #nav-link {}

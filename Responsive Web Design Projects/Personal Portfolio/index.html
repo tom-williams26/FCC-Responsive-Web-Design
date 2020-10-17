@@ -11,44 +11,176 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <!-- <header>Tom Williams</header> -->
-        <ul>
-            <!-- a tags -->
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <main>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="inner-width">
+                <!-- Navigation Menu -->
+                <p>Tom Williams</p>
+                <input type="checkbox" id="check" />
+                <label for="check" class="show-menu-btn">
+                    <p>menu</p><i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-menu">
+                    <a class="nav-link active" href="/"><i class="fas fa-home"></i>Home</a>
+                    <a class="nav-link" href="#about"><i class="far fa-user"></i>About</a>
+                    <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a>
+                    <a class="nav-link" href="#contact"><i class="far fa-envelope"></i>Contact</a>
+                    <label for="check" class="hide-menu-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </ul>
+            </div>
+
+
+        </nav>
+
+
+
         <!-- Landing page -->
-        <div id="welcome-section">
-            <div id="background-drop"><img src="https://lh3.googleusercontent.com/lsMHV4XPnKE_nW3JcHJ5bbLZ700IErA37QE8upUlMr3UnPU9Ukk9_ggbDyMRknDjIo5AoctgFEigO_oRrjEPB9otUdnntXziBI7igz8nLJ9tfaW5e--DPSi5ZLk6MNwT_1o4VAeB" /></div>
-            <h1>intro</h1>
-            <!-- profile links i.e., github, linkedin, codepen, FCC -->
-        </div>
-        <!-- My portfolio -->
-        <div id="projects">
+        <section id="welcome-section">
+            <div class="inner-width">
+                <!-- Background animation - alter current CSS! -->
+                <ul class="box-area">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <header class="content">
+                        <p>Hi,</p>
+                        <p>I'm Tom</p>
+                        <p>A developer & Designer</p>
+                        <p class="inspirational-quote">“If people are doubting how far you can go, go so far that you can’t hear them anymore.” – Michele Ruiz
+                        </p>
+                        <!-- <div class="profile-link">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-codepen"></i></a>
+                        </div> -->
+                        <div class="welcome-section-links">
+                            <a href="https://www.linkedin.com/in/thomas-williams-454a45143/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-codepen"></i></a>
+                        </div>
+                        <div class="buttons">
+                            <a href="#">Contact me</a>
+                            <a href="#">Download CV</a>
+                        </div>
+                        <!-- <a href="https://www.linkedin.com/in/thomas-williams-454a45143/" class="fab fa-linkedin-in"></a> -->
+
+                    </header>
+                </ul>
+
+            </div>
+
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <h1>About me</h1>
+                <div class="text-container">
+                    <p>hello</p>
+                    <p>I am a developer</p>
+                    <p>Graduated from the University of South wales</p>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio section -->
+        <section id="portfolio">
+            <h2>Projects</h2>
+
+            <p>A showcase of my projects and abilities</p>
             <!-- User Story #5: The projects section should contain at least one link to a project. -->
-            <div class="project-title">
-                <p>NHS Tribute Page</p>
-                <a href="https://codepen.io/tom-williams/pen/MWKdeQj"></a>
+            <div class="project-container">
+                <div class="project-tile">
+                    <p>NHS Tribute Page</p>
+                    <img src="https://lh3.googleusercontent.com/krJ0JrERhRg5UeFgm-0kgch7pUJoUCirUXm6rOsPcsSGs4gqYFBr5g1q3yxv_SWmZ1IohKH5DAir-NpF5aOUlSOzXpxxBP1WqXZ4PTex_3-EYX8CK6hxOp8f-cR7XnaHDckAnqj0" alt="tribute-page" />
+                    <div class="project-links">
+                        <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
+                                class="fas fa-code"></i></a>
+                        <a class="demo" href="https://codepen.io/tom-williams/full/MWKdeQj" target="_blank">
+                            Demo<i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="project-tile">
+                        <p>University Survey Form</p>
+                        <img src="https://lh3.googleusercontent.com/JIjci754f2pF7N3t_R-fhcdLt3dsK5a9bHcF4riTrqXMknvkJpVT9q9BaxYF_do-302cGtzUlBlVnp_54TFd5HraYEnclzhMId6fEknOdw6lvu4VpCDDLAxyO05_8PALvdK_clR3" alt="survey-form" />
+                        <div class="project-links">
+                            <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
+                                    class="fas fa-code"></i></a>
+                            <a class="demo" href="https://codepen.io/tom-williams/full/MWKdeQj" target="_blank">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <p>Product Landing Page</p>
+                        <img src="https://lh3.googleusercontent.com/YrkNargE7lYBYINUTGhT9rh__wGanq5ysCWSCX0vCUPEXRXtUeBH0y_LTnSr33Jt9V0T3AsEmJViRzIX-8JDIRW2nfBoR11kOEPlPHvvqybx9l1NWhVcNYpJI45HB58r8pMrO-jg" alt="product-landing-page" />
+                        <div class="project-links">
+                            <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
+                                    class="fas fa-code"></i></a>
+                            <a class="demo" href="https://codepen.io/tom-williams/full/MWKdeQj" target="_blank">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <p>Weather API Technical Document Page</p>
+                        <img src="https://lh3.googleusercontent.com/SF0J9NpjGmE-HCvxuWgKhK9o7HQs2sToTMphs7R_Jou9YJGfis0HtJk22ez9SbbXphNgVOQW4ffFeJ89MiofGpo6xpIE54BisIVF_X86siQWghVsB1a4HkmRkfYhIC4na_3sXNPQ" alt="technical-document-page" />
+                        <div class="project-links">
+                            <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank"></i>Code<i class="fas fa-code"></i></a>
+                            <a class="demo" href="https://codepen.io/tom-williams/full/MWKdeQj" target="_blank">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-title">
-                <p>Survey Form</p>
-                <a href="https://codepen.io/tom-williams/pen/MWKMMVY"></a>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact me</h1>
+
+            <form action="mailto:tom.williams0593@outlook.com" method="POST">
+                <div class="input-wrapper">
+                    <input type="text" name="fullname" required>
+                    <label for="name">
+                        <span>Full Name</span>
+                    </label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="email" name="email" required>
+                    <label for="email">
+                        <span>Your email</span>
+                    </label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input name="message" required>
+                    <label for="message">
+                        <span>Your message</span>
+                    </label>
+                </div>
+                <div class="btn-wrapper">
+                </div>
+                <input class="btn-submit" type="submit" value="Send message">
+            </form>
+        </section>
+        <!-- Footer Section -->
+        <section id="footer">
+            <p>I am a Footer</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/thomas-williams-454a45143/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
             </div>
-            <div class="project-title">
-                <p>Product Landing Page</p>
-                <a href=""></a>
-            </div>
-            <div class="project-title">
-                <p>Weather API Technical Document Page</p>
-                <a href="https://codepen.io/tom-williams/pen/MWKdeQj"></a>
-            </div>
+        </section>
+        <!-- Attached social bar -->
+        <div class="a-links-bar">
+            <a href="https://www.linkedin.com/in/thomas-williams-454a45143/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-codepen"></i></a>
         </div>
-    </main>
 </body>
 
 </html>

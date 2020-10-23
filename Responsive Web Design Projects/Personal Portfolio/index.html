@@ -17,18 +17,22 @@
             <div class="inner-width">
                 <!-- Navigation Menu -->
                 <p>Tom Williams</p>
-                <input type="checkbox" id="check" />
-                <label for="check" class="show-menu-btn">
-                    <p>menu</p><i class="fas fa-bars"></i>
-                </label>
+                <p>menu</p>
+                <input type="checkbox" id="toggler" />
+
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <!-- <p>menu</p> -->
+
                 <ul class="nav-menu">
                     <a class="nav-link active" href="/"><i class="fas fa-home"></i>Home</a>
                     <a class="nav-link" href="#about"><i class="far fa-user"></i>About</a>
                     <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a>
                     <a class="nav-link" href="#contact"><i class="far fa-envelope"></i>Contact</a>
-                    <label for="check" class="hide-menu-btn">
+                    <!-- <label for="check" class="hide-menu-btn">
                         <i class="fas fa-times"></i>
-                    </label>
+                    </label> -->
                 </ul>
             </div>
 
@@ -56,8 +60,8 @@
                         </p>
 
                         <div class="welcome-section-links">
-                            <a href="https://www.linkedin.com/in/thomas-williams-454a45143/"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/thomas-williams-454a45143/"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-codepen"></i></a>
                         </div>
                         <div class="buttons">
@@ -93,11 +97,13 @@
         <section id="portfolio">
             <h2>Projects</h2>
 
-            <p>A showcase of my projects and abilities</p>
+
+            <p>I believe in a mobile-first approach when designing web applications or web pages, due to the majority of users access the internet through the use of a handheld device.</p>
+            <p>Below is a showcase of my abilities and the projects I have worked on.</p>
             <!-- User Story #5: The projects section should contain at least one link to a project. -->
             <div class="project-container">
                 <div class="project-tile">
-                    <p>NHS Tribute Page</p>
+                    <h3>NHS Tribute Page</h3>
                     <img src="https://lh3.googleusercontent.com/krJ0JrERhRg5UeFgm-0kgch7pUJoUCirUXm6rOsPcsSGs4gqYFBr5g1q3yxv_SWmZ1IohKH5DAir-NpF5aOUlSOzXpxxBP1WqXZ4PTex_3-EYX8CK6hxOp8f-cR7XnaHDckAnqj0" alt="tribute-page" />
                     <div class="project-links">
                         <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
@@ -107,7 +113,7 @@
                     </div>
 
                     <div class="project-tile">
-                        <p>University Survey Form</p>
+                        <h3>University Survey Form</h3>
                         <img src="https://lh3.googleusercontent.com/JIjci754f2pF7N3t_R-fhcdLt3dsK5a9bHcF4riTrqXMknvkJpVT9q9BaxYF_do-302cGtzUlBlVnp_54TFd5HraYEnclzhMId6fEknOdw6lvu4VpCDDLAxyO05_8PALvdK_clR3" alt="survey-form" />
                         <div class="project-links">
                             <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
@@ -117,7 +123,7 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <p>Product Landing Page</p>
+                        <h3>Product Landing Page</h3>
                         <img src="https://lh3.googleusercontent.com/YrkNargE7lYBYINUTGhT9rh__wGanq5ysCWSCX0vCUPEXRXtUeBH0y_LTnSr33Jt9V0T3AsEmJViRzIX-8JDIRW2nfBoR11kOEPlPHvvqybx9l1NWhVcNYpJI45HB58r8pMrO-jg" alt="product-landing-page" />
                         <div class="project-links">
                             <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank">Code<i
@@ -127,7 +133,7 @@
                         </div>
                     </div>
                     <div class="project-tile">
-                        <p>Weather API Technical Document Page</p>
+                        <h3><span>Weather API Technical</span><span> Document Page</span></h3>
                         <img src="https://lh3.googleusercontent.com/SF0J9NpjGmE-HCvxuWgKhK9o7HQs2sToTMphs7R_Jou9YJGfis0HtJk22ez9SbbXphNgVOQW4ffFeJ89MiofGpo6xpIE54BisIVF_X86siQWghVsB1a4HkmRkfYhIC4na_3sXNPQ" alt="technical-document-page" />
                         <div class="project-links">
                             <a class="code" href="https://codepen.io/tom-williams/pen/MWKdeQj" target="_blank"></i>Code<i class="fas fa-code"></i></a>
@@ -140,7 +146,7 @@
         </section>
         <!-- Contact Section -->
         <section id="contact">
-            <h1>Contact me</h1>
+            <h2>Contact me</h2>
 
             <form action="mailto:tom.williams0593@outlook.com" method="POST">
                 <div class="input-wrapper">

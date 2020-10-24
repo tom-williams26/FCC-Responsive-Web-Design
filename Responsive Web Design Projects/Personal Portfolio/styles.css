@@ -324,10 +324,9 @@
     #welcome-section .inner-width p {
         margin: 10px 0px 5px;
     }
-    
-    #welcome-section .content .inspirational-quote {
+    /* #welcome-section .content .inspirational-quote {
         padding: 0 20px;
-    }
+    } */
     
     .welcome-section-links {
         display: flex;
@@ -367,9 +366,6 @@
         color: #ffffff;
         transition: all ease 0.5s;
     }
-    /* #welcome-section .buttons {
-        margin-top: 10px;
-    } */
     
     #welcome-section .buttons a {
         display: inline-block;
@@ -384,7 +380,6 @@
         cursor: pointer;
         background-color: #ffffff;
     }
-    /* ,#welcome-section .buttons a:nth-child(2)  */
     
     #welcome-section .buttons a:hover {
         background-color: #0073b1;
@@ -670,9 +665,14 @@
     
     .footer-links a:hover,
     .a-links-bar a:hover {
-        background-color: #0073b1;
+        background-color: #000000;
         box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
         transition: all ease 0.5s;
+    }
+    
+    .footer-links a:hover:nth-child(2),
+    .a-links-bar a:hover:nth-child(2) {
+        background-color: #0073b1;
     }
     
     .footer-links a:hover i,

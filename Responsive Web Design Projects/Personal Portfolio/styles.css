@@ -30,11 +30,14 @@ html {
     z-index: 1;
     transition: .3s linear;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.navbar .inner-width {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: #ffffff;
 }
 
 .navbar p:nth-child(2) {
@@ -129,21 +132,6 @@ html {
 .navbar .toggler:hover+.hamburger>div {
     background-color: #0073b1;
 }
-
-
-/* .navbar .inner-width {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-} */
-
-
-/* 
-.navbar .inner-width p:nth-child(1) {
-    margin: 0 0 0 15px;
-    padding: 10px 0;
-} */
 
 
 /* Show menu */
@@ -340,11 +328,6 @@ html {
     font-size: 30px;
 }
 
-
-/* #welcome-section .content .inspirational-quote {
-        padding: 0 20px;
-    } */
-
 .welcome-section-links {
     display: flex;
     justify-content: center;
@@ -416,7 +399,6 @@ html {
     width: 100%;
     margin: 0 auto;
     background: linear-gradient(to left, #3d3d3d, #444444);
-    /* background: #444; */
     color: white;
 }
 
@@ -436,7 +418,6 @@ html {
 /* Portfolio Section */
 
 #portfolio {
-    /* background: #4b4b4b; */
     background: #444;
 }
 

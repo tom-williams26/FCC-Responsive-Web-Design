@@ -417,32 +417,32 @@ html {
 
 /* Portfolio Section */
 
-#portfolio {
-    background: #444;
-}
-
 #portfolio,
 #portfolio .project-container .project-tile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
+    background: #444;
 }
 
 #portfolio h2,
 #portfolio p {
-    margin: 25px 20px 0px;
     color: #fff;
     text-align: center;
+    padding: 1rem;
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 40px 20px 10px;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.project-tile {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    padding: 2rem 0;
 }
 
 .project-container .project-tile h3 {
@@ -525,9 +525,6 @@ html {
     margin-bottom: 20px;
 }
 
-
-/* Form Container */
-
 form {
     width: 90%;
     padding: 20px 20px 40px;
@@ -595,9 +592,6 @@ form {
     transform: translateX(0%);
     transform: all .6s ease;
 }
-
-
-/* Form button styling */
 
 .btn-submit {
     display: flex;
@@ -716,7 +710,8 @@ form {
     font-size: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
     .navbar {
         padding: 15px 45px 15px 40px;
         font-size: 25px;
@@ -818,7 +813,6 @@ form {
     #contact h2 {
         margin-bottom: 60px;
     }
-    /* Form Container */
     form {
         width: 80%;
         padding: 40px 40px 80px;
@@ -929,4 +923,4 @@ form {
         padding-left: 30px;
         font-size: 22px;
     }
-}
+} */

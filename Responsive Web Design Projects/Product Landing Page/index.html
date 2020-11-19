@@ -1,136 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <title>Product Landing Page</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="page-wrapper">
-      <!-- User story #1 - Header -->
-      <header id="header">
-        <!-- User story #2 - Header Image -->
-        <div id="header-logo">
-          <img
-            id="header-img"
-            src="https://lh3.googleusercontent.com/aeCS_totjKVHnwNgMYXNz2P1wGpC1gWjJWDD7PsD5Wv7piklk6hfHpZnngPmoPTo3lSNvyHNCekPQxqzGfw9aHrVSIMdCHGvsVN2fqoJ7FRCxxIZOg9Z3XpRBKxe5gciztt7zbOg"
-          />
-        </div>
+        <!-- User story #1 - Header -->
+        <header id="header">
+            <!-- User story #2 - Header Image -->
+            <div id="header-logo">
+                <img id="header-img" src="https://lh3.googleusercontent.com/NQvZxLqlVricPbyn_td35ANoPyK7e_iFcaXw3pD8lfhSPax0z3uNiOlr28h6ZY1vfpOU197UlJ__a63NpAIl9g92YBdfVjk5UrqM9Ys0R-C1Zuw-lLzDgQvsDbLP-qmqcsBDdFXr=w1920-h1080" />
+            </div>
 
-        <!-- User story #3 - Nav Bar -->
-        <nav id="nav-bar">
-          <ul class="menu">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#video">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing-section">Pricing</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- User story #4 Nav-Links -->
-        <!-- User story #5 - Redirect via clickable links -->
-      </header>
-      <!-- Main Content -->
-      <div id="main">
-        <div>
-          <p>
-            Interested in Web Development?
-          </p>
-          <p>
-            Subscribe to recieve promotional offers and guidance by registering
-            your email
-          </p>
+            <!-- User story #3 - Nav Bar -->
+            <nav id="nav-bar">
+                <ul class="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing-section">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- User story #4 Nav-Links -->
+            <!-- User story #5 - Redirect via clickable links -->
+        </header>
+        <!-- Main Content -->
+        <div id="main">
+            <div>
+                <p>
+                    Interested in Web Development?
+                </p>
+                <p>
+                    Subscribe to recieve promotional offers and guidance by registering your email
+                </p>
+            </div>
+            <div>
+                <!-- User Story #7 - Form element -->
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <!-- User Story #8, #9 & #10 - Email Input, Placeholder text & HTML Validation -->
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+                    <!-- User Story #11 - Submit Input -->
+                    <input id="submit" type="submit" value="Subscribe" />
+                    <!-- User Story #12 - User Submitted -->
+                </form>
+            </div>
+            <div id="features">
+                <div id="feature-details">
+                    <h2>Comprehensive Courses</h2>
+                    <p>
+                        Acquire new skills with our Comprehensive courses packed with tutorials, coding challenges and personal projects to assist you in getting the ideal job.
+                    </p>
+                </div>
+                <div id="feature-details">
+                    <h2>Learning Paths</h2>
+                    <p>
+                        Progress through several in-depth learning paths designed to make you employable.
+                    </p>
+                </div>
+                <div id="feature-details">
+                    <h2>High Quality Coding Practices</h2>
+                    <p>
+                        Industry led coding practices designed to keep you up to date with the latest technologies in industry.
+                    </p>
+                </div>
+            </div>
+            <!-- User Story #6 Embedded Video -->
+            <div id="video-wrapper">
+                <iframe id="video" src="https://www.youtube.com/embed/mU6anWqZJcc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Pricing Section -->
+            <div id="pricing-section">
+                <div id="beginners-package">
+                    <h3>Beginners Package</h3>
+                    <p>Designed for individuals with no prior coding experience.</p>
+                    <p>£29.99</p>
+                </div>
+                <div id="intermediate-package">
+                    <h3>Intermediate Package</h3>
+                    <p>Ideal for individuals with some coding experience.</p>
+                    <p>£49.99</p>
+                </div>
+                <div id="intensive-package">
+                    <h3>Intensive Package</h3>
+                    <p>
+                        Designed for individuals with prior experience with data-structures and algorithms.
+                    </p>
+                    <p>£79.99</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <!-- User Story #7 - Form element -->
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <!-- User Story #8, #9 & #10 - Email Input, Placeholder text & HTML Validation -->
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your Email"
-              required
-            />
-            <!-- User Story #11 - Submit Input -->
-            <input id="submit" type="submit" value="Subscribe" />
-            <!-- User Story #12 - User Submitted -->
-          </form>
+        <!-- Footer and redundant footer links-->
+        <div id="footer">
+            <ul id="footer-menu">
+                <li><a href="/">Privacy</a></li>
+                <li><a href="/">Terms</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+            <p><i>Created by Tom Williams</i></p>
         </div>
-        <div id="features">
-          <div id="feature-details">
-            <h2>Comprehensive Courses</h2>
-            <p>
-              Acquire new skills with our Comprehensive courses packed with
-              tutorials, coding challenges and personal projects to assist you
-              in getting the ideal job.
-            </p>
-          </div>
-          <div id="feature-details">
-            <h2>Learning Paths</h2>
-            <p>
-              Progress through several in-depth learning paths designed to make
-              you employable.
-            </p>
-          </div>
-          <div id="feature-details">
-            <h2>High Quality Coding Practices</h2>
-            <p>
-              Industry led coding practices designed to keep you up to date with
-              the latest technologies in industry.
-            </p>
-          </div>
-        </div>
-        <!-- User Story #6 Embedded Video -->
-        <div id="video-wrapper">
-          <iframe
-            id="video"
-            src="https://www.youtube.com/embed/mU6anWqZJcc"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <!-- Pricing Section -->
-        <div id="pricing-section">
-          <div id="beginners-package">
-            <h3>Beginners Package</h3>
-            <p>Designed for individuals with no prior coding experience.</p>
-            <p>£29.99</p>
-          </div>
-          <div id="intermediate-package">
-            <h3>Intermediate Package</h3>
-            <p>Ideal for individuals with some coding experience.</p>
-            <p>£49.99</p>
-          </div>
-          <div id="intensive-package">
-            <h3>Intensive Package</h3>
-            <p>
-              Designed for individuals with prior experience with
-              data-structures and algorithms.
-            </p>
-            <p>£79.99</p>
-          </div>
-        </div>
-      </div>
-      <!-- Footer and redundant footer links-->
-      <div id="footer">
-        <ul id="footer-menu">
-          <li><a href="/">Privacy</a></li>
-          <li><a href="/">Terms</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
-        <p><i>Created by Tom Williams</i></p>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

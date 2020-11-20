@@ -26,7 +26,7 @@ p {
   background-color: indigo;
 }
 
-#header #header-logo #header-img {
+#header #header-img {
   display: flex;
   height: 85px;
   margin: 0 auto;
@@ -66,7 +66,10 @@ p {
 }
 
 #main {
-  margin: 30px 5px;
+  /* margin: 30px 5px; */
+}
+.landing-page {
+  height: 100vh;
 }
 
 #form {

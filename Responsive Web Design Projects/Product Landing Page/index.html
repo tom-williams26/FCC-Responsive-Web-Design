@@ -14,20 +14,22 @@
         <!-- User story #1 - Header -->
         <header id="header">
             <!-- User story #2 - Header Image -->
-
+<div class="header-container">
+    
             <img id="header-img" src="https://lh3.googleusercontent.com/sF8U3l3LUMdJq4O87aKayh34VNp84hAU_-Hg1GXNaOTJdrvVdKEo4G7Kl6tAxS6aVUrynkPDIfv83m3ssBSNZcxElXzAMcthuXkeUaAozd0Xk0oneNAzAUYjeap5STpKLdFpvko2=s64-p-k" />
-
+            <a href="/"><h4>Tick Tock Shop</h4></a>
+            </div>
             <!-- User story #3 - Nav Bar -->
             <nav id="nav-bar">
                 <ul class="menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#benefits">Benefits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#video">How it works</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing-section">Pricing</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -36,80 +38,58 @@
         </header>
         <!-- Main Content -->
         <div id="main">
-            <div class="landing-page"><button class="enquire">Enquire Now</button></div>
-            <div>
-                <p>
-                    Interested in Web Development?
-                </p>
-                <p>
-                    Subscribe to recieve promotional offers and guidance by registering your email
-                </p>
+            <div class="landing-page">
+                <img src="https://johnlewis.scene7.com/is/image/JohnLewis/238030840?$rsp-pdp-port-1440$" alt="digital-alarm-clock">
+                <h1>Modern & reliable clocks you can rely on!</h1>
+                <a href="#contact" class="contact-us">Contact Us</a>
             </div>
-            <div>
+                <!-- User Story #6 Embedded Video -->
+            <div id="benefits">
+                <h2>Benefits</h2>
+                <iframe id="video" src="https://www.youtube.com/embed/mU6anWqZJcc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="services">
+                <h2>Services</h2>
+                <p>The customer's expectations as listed below.</p>
+                <div id="quality">
+                    <h3>Quality</h3>
+                    <p>Our full range of clocks are robust & reliable.</p>
+                </div>
+                <div id="delivery">
+                    <h3>Prompt Delivery</h3>
+                    <p>Prompt and fast delivery. We aim to have your order delivered in 3-5 working days</p>
+                </div>
+                <div id="satisfaction">
+                    <h3>100% Guarantee</h3>
+                    <p>100% money back guarantee! If you are not satisfied with your purchase, we will exchange or refund accordingly.</p>
+                </div>
+            </div>
+        
+            <!-- Contact Section -->
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <h4>Get in touch to find out more about our products</h4>
                 <!-- User Story #7 - Form element -->
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <!-- User Story #8, #9 & #10 - Email Input, Placeholder text & HTML Validation -->
                     <input type="email" name="email" id="email" placeholder="Enter your Email" required />
                     <!-- User Story #11 - Submit Input -->
-                    <input id="submit" type="submit" value="Subscribe" />
+                    <input id="submit" type="submit" value="Contact" />
                     <!-- User Story #12 - User Submitted -->
                 </form>
             </div>
-            <div id="features">
-                <div id="feature-details">
-                    <h2>Comprehensive Courses</h2>
-                    <p>
-                        Acquire new skills with our Comprehensive courses packed with tutorials, coding challenges and personal projects to assist you in getting the ideal job.
-                    </p>
-                </div>
-                <div id="feature-details">
-                    <h2>Learning Paths</h2>
-                    <p>
-                        Progress through several in-depth learning paths designed to make you employable.
-                    </p>
-                </div>
-                <div id="feature-details">
-                    <h2>High Quality Coding Practices</h2>
-                    <p>
-                        Industry led coding practices designed to keep you up to date with the latest technologies in industry.
-                    </p>
-                </div>
-            </div>
-            <!-- User Story #6 Embedded Video -->
-            <div id="video-wrapper">
-                <iframe id="video" src="https://www.youtube.com/embed/mU6anWqZJcc" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <!-- Pricing Section -->
-            <div id="pricing-section">
-                <div id="beginners-package">
-                    <h3>Beginners Package</h3>
-                    <p>Designed for individuals with no prior coding experience.</p>
-                    <p>£29.99</p>
-                </div>
-                <div id="intermediate-package">
-                    <h3>Intermediate Package</h3>
-                    <p>Ideal for individuals with some coding experience.</p>
-                    <p>£49.99</p>
-                </div>
-                <div id="intensive-package">
-                    <h3>Intensive Package</h3>
-                    <p>
-                        Designed for individuals with prior experience with data-structures and algorithms.
-                    </p>
-                    <p>£79.99</p>
-                </div>
+        
+            <!-- Footer and redundant footer links-->
+            <div id="footer">
+                <ul id="footer-menu">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p><i>Created by Tom Williams</i></p>
             </div>
         </div>
-        <!-- Footer and redundant footer links-->
-        <div id="footer">
-            <ul id="footer-menu">
-                <li><a href="/">Privacy</a></li>
-                <li><a href="/">Terms</a></li>
-                <li><a href="/">Contact</a></li>
-            </ul>
-            <p><i>Created by Tom Williams</i></p>
-        </div>
-    </div>
+    </div> 
 </body>
 
 </html>

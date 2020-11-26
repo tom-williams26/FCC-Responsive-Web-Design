@@ -331,12 +331,12 @@
         #skills-section .inner-width,
         #portfolio-section .inner-width,
         #contact-section .inner-width {
-            margin: 0 1.7rem;
+            margin: 0 1.2rem;
         }
         
         #about-section .background-container h3 {
             text-align: start;
-            padding: 3rem 0 1rem;
+            padding: 5rem 0 1rem;
             color: #f9fbfc;
             opacity: 0.5;
             font-size: 4rem;
@@ -371,7 +371,7 @@
         
         #skills-section .skills-container h3 {
             text-align: start;
-            padding: 3rem 0 1rem;
+            padding: 5rem 0 1rem;
             color: #f9fbfc;
             opacity: 0.5;
             font-size: 4rem;
@@ -417,7 +417,7 @@
         
         .portfolio-intro h3 {
             text-align: start;
-            padding: 3rem 0 1rem;
+            padding: 5rem 0 1rem;
             color: #333333;
             opacity: 0.5;
             font-size: 4rem;
@@ -575,12 +575,11 @@
         .contact-container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
         
         #contact-section h3 {
-            align-self: flex-start;
             padding: 3rem 0 1rem;
             color: #f9fbfc;
             opacity: 0.5;
@@ -878,7 +877,7 @@
                 font-size: 1.2rem;
             }
             #contact-section {
-                height: 65vh;
+                height: 85vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -887,7 +886,7 @@
                 padding: 0 1.5rem 3rem;
             }
             #contact-section .contact-container h3 {
-                padding: 4rem 0 1.5rem;
+                padding: 0 1.5rem;
                 font-size: 4.5rem;
             }
             #contact-section .contact-container h4 {
@@ -1016,13 +1015,13 @@
             }
             #projects {
                 padding: 2rem 0;
-                gap: 4rem 2rem;
-                margin: 0 auto 4rem;
+                gap: 4rem;
+                margin: 0 2rem 4rem;
             }
             .project-tile {
                 grid-template-columns: 1fr 1fr 2fr;
                 grid-auto-rows: minmax(100px, auto);
-                gap: 2rem 0;
+                gap: 2rem;
             }
             #projects .project-tile h3 {
                 font-size: 2.2rem;
@@ -1076,7 +1075,7 @@
             }
             #contact-section {
                 grid-area: contact-section;
-                height: 70vh;
+                height: 80vh;
                 background: #333333;
             }
             #contact-section h3 {

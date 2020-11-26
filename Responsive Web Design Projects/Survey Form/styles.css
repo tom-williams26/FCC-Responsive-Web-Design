@@ -1,47 +1,49 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 #main {
-  color: white;
-  background-color: rgb(172, 27, 27);
-  /* height: 100vh; */
+    color: white;
+    background-color: rgb(172, 27, 27);
+    /* height: 100vh; */
 }
 
 .title-group {
-  padding: 1rem;
+    padding: 1rem;
 }
 
-.title-group h1 {
-  text-align: center;
-  font-weight: 600;
-  padding: 1rem;
-  letter-spacing: 1px;
+.title-group #title {
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+    letter-spacing: 1px;
 }
 
 .title-group p {
-  text-align: center;
-  font-style: italic;
-  font-weight: 200;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
 }
+
 #survey-form {
-  padding: 0 2rem 2rem;
-  margin: 1rem 2rem;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0 2rem 2rem;
+    margin: 1rem 2rem;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="number"] {
-  text-align: center;
-  font-weight: 600;
+    text-align: center;
+    font-weight: 600;
 }
 
 select {
-  text-align-last: center;
-  font-weight: 600;
+    text-align-last: center;
+    font-weight: 600;
 }
 
 #name-form-group,
@@ -52,184 +54,184 @@ select {
 #improvements-form-group,
 #comments-form-group,
 #submit-form-group {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 #name,
 #email,
 #number {
-  width: 100%;
-  padding: 0.6rem;
-  margin: 1.5rem 0 0;
-  border-radius: 8px;
-  border: 2px solid white;
+    width: 100%;
+    padding: 0.6rem;
+    margin: 1.5rem 0 0;
+    border-radius: 8px;
+    border: 2px solid white;
 }
 
 #dropdown {
-  width: 100%;
-  padding: 0.6rem;
-  margin: 20px auto 0;
-  display: block;
-  border-radius: 7px;
-  border: 2px solid white;
+    width: 100%;
+    padding: 0.6rem;
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 7px;
+    border: 2px solid white;
 }
 
 #interested-form-group .radio-group {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 #interested-form-group .radio-group input {
-  margin: 0.8rem 0;
+    margin: 0.8rem 0;
 }
 
 #checkbox-group {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 #improvements-form-group #checkbox-group input {
-  margin: 0.8rem 0;
+    margin: 0.8rem 0;
 }
 
 #comments {
-  width: 100%;
-  margin: 20px auto 0;
-  border: 2px solid white;
+    width: 100%;
+    margin: 20px auto 0;
+    border: 2px solid white;
 }
 
 #submit {
-  padding: 0.7rem 1rem;
-  text-align: center;
-  width: 100%;
-  border-radius: 10px;
-  border: 3px solid white;
-  background-color: white;
-  color: black;
-  font-weight: 600;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    font-weight: 600;
 }
 
 #submit:hover {
-  color: rgb(172, 27, 27);
+    color: rgb(172, 27, 27);
 }
 
 @media only screen and (min-width: 768px) {
-  #title {
-    padding: 1.8rem;
-    font-size: 2.5rem;
-  }
-  #description {
-    font-size: 1.5rem;
-    font-weight: 200;
-  }
-  #name-form-group,
-  #email-form-group,
-  #age-form-group,
-  #dropdown-form-group,
-  #interested-form-group,
-  #improvements-form-group,
-  #comments-form-group,
-  #submit-form-group {
-    padding: 1.5rem 0;
-    font-size: 1.3rem;
-  }
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="number"] {
-    font-size: 1.3rem;
-  }
-  select {
-    font-size: 1.3rem;
-  }
-  textarea {
-    font-size: 1.3rem;
-  }
-  #dropdown {
-    font-size: 1.3rem;
-  }
-  #interested-form-group .radio-group {
-    padding-top: 1rem;
-  }
-  #interested-form-group .radio-group input {
-    margin: 1.2rem 0;
-  }
-  #checkbox-group {
-    padding-top: 1rem;
-  }
-  #improvements-form-group #checkbox-group input {
-    margin: 1.2rem 0;
-  }
-  #comments {
-    margin: 2rem auto 0;
-  }
-  #submit-form-group {
-    padding: 1rem 0;
-  }
-  #submit {
-    font-size: 1.3rem;
-    padding: 1rem;
-  }
+    #title {
+        padding: 1.8rem;
+        font-size: 2.5rem;
+    }
+    #description {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    #name-form-group,
+    #email-form-group,
+    #age-form-group,
+    #dropdown-form-group,
+    #interested-form-group,
+    #improvements-form-group,
+    #comments-form-group,
+    #submit-form-group {
+        padding: 1.5rem 0;
+        font-size: 1.3rem;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"] {
+        font-size: 1.3rem;
+    }
+    select {
+        font-size: 1.3rem;
+    }
+    textarea {
+        font-size: 1.3rem;
+    }
+    #dropdown {
+        font-size: 1.3rem;
+    }
+    #interested-form-group .radio-group {
+        padding-top: 1rem;
+    }
+    #interested-form-group .radio-group input {
+        margin: 1.2rem 0;
+    }
+    #checkbox-group {
+        padding-top: 1rem;
+    }
+    #improvements-form-group #checkbox-group input {
+        margin: 1.2rem 0;
+    }
+    #comments {
+        margin: 2rem auto 0;
+    }
+    #submit-form-group {
+        padding: 1rem 0;
+    }
+    #submit {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
-  #title {
-    padding: 2rem;
-    font-size: 3rem;
-  }
-  #description {
-    font-size: 2rem;
-    font-weight: 200;
-  }
-  #survey-form {
-    margin: 1rem auto;
-    width: 60%;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  }
-  #name-form-group,
-  #email-form-group,
-  #age-form-group,
-  #dropdown-form-group,
-  #interested-form-group,
-  #improvements-form-group,
-  #comments-form-group,
-  #submit-form-group {
-    padding: 1.8rem 0;
-    font-size: 1.6rem;
-  }
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="number"] {
-    font-size: 1.6rem;
-  }
-  select {
-    font-size: 1.6rem;
-  }
-  textarea {
-    font-size: 1.6rem;
-  }
-  #dropdown {
-    text-align: center;
-    font-size: 1.6rem;
-    width: 100%;
-  }
-  #interested-form-group .radio-group {
-    padding-top: 2rem;
-  }
-  #interested-form-group .radio-group input {
-    margin: 1.8rem 0;
-  }
-  #checkbox-group {
-    padding-top: 2rem;
-  }
-  #improvements-form-group #checkbox-group input {
-    margin: 1.8rem 0;
-  }
-  #comments {
-    margin: 2.5rem auto 0;
-  }
-  #submit-form-group {
-    padding: 2rem 0;
-  }
-  #submit {
-    font-size: 1.3rem;
-    padding: 1rem;
-  }
+    #title {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    #description {
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    #survey-form {
+        margin: 1rem auto;
+        width: 60%;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    }
+    #name-form-group,
+    #email-form-group,
+    #age-form-group,
+    #dropdown-form-group,
+    #interested-form-group,
+    #improvements-form-group,
+    #comments-form-group,
+    #submit-form-group {
+        padding: 1.8rem 0;
+        font-size: 1.6rem;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"] {
+        font-size: 1.6rem;
+    }
+    select {
+        font-size: 1.6rem;
+    }
+    textarea {
+        font-size: 1.6rem;
+    }
+    #dropdown {
+        text-align: center;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    #interested-form-group .radio-group {
+        padding-top: 2rem;
+    }
+    #interested-form-group .radio-group input {
+        margin: 1.8rem 0;
+    }
+    #checkbox-group {
+        padding-top: 2rem;
+    }
+    #improvements-form-group #checkbox-group input {
+        margin: 1.8rem 0;
+    }
+    #comments {
+        margin: 2.5rem auto 0;
+    }
+    #submit-form-group {
+        padding: 2rem 0;
+    }
+    #submit {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
 }

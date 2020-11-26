@@ -13,86 +13,86 @@
 <body>
     <div id="main">
         <div class="title-group">
-            <h1>Survey Form</h1>
-            <p>Thank you for attending our open day</p>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for attending our open day</p>
         </div>
-        <div id="survey-form">
-           <!--Full Name Field-->
-  <div id="name-form-group">
-    <label id="name-label" for="name-label">Name</label><br />
-    <input type="text" name="name" id="name" placeholder="Enter your Name" required /><br />
-</div>
+        <form id="survey-form">
+            <!--Full Name Field-->
+            <div id="name-form-group">
+                <label id="name-label" for="name-label">Name</label><br />
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required /><br />
+            </div>
 
-<!--Email Address Field-->
-<div id="email-form-group">
-    <label id="email-label" for="email-label">Email</label><br />
-    <input type="email" name="email" id="email" placeholder="Enter your Email" required />
-</div>
+            <!--Email Address Field-->
+            <div id="email-form-group">
+                <label id="email-label" for="email-label">Email</label><br />
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+            </div>
 
-<!--Age Field-->
-<div id="age-form-group">
-    <label id="number-label" for="number-label">Age</label><br />
-    <input type="number" name="age" id="number" placeholder="Age" min="16" max="35" required /><br />
-</div>
-<!--Course dropdown List-->
-<div id="dropdown-form-group">
-    <label for="course">What course are you most interested in?</label><br />
-    <select name="course" id="dropdown">
-        <option value="defaultOption" disabled>Select a course</option>
-        <option value="computerScience">Computer Science</option>
-        <option value="webDevelopment">Web Development</option>
-        <option value="computerSecurity">Computer Security</option>
-        <option value="ai">Artificial Intelligence</option>
-        <option value="computerForensics">Computer Forensics</option>
-        <option value="it">Information Technology</option>
-        <option value="gameDevelopment">Game Development</option>
-    </select>
-</div>
+            <!--Age Field-->
+            <div id="age-form-group">
+                <label id="number-label" for="number-label">Age</label><br />
+                <input type="number" name="age" id="number" placeholder="Age" min="16" max="35" required /><br />
+            </div>
+            <!--Course dropdown List-->
+            <div id="dropdown-form-group">
+                <label for="course">What course are you most interested in?</label><br />
+                <select name="course" id="dropdown">
+                    <option value="defaultOption" disabled>Select a course</option>
+                    <option value="computerScience">Computer Science</option>
+                    <option value="webDevelopment">Web Development</option>
+                    <option value="computerSecurity">Computer Security</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="computerForensics">Computer Forensics</option>
+                    <option value="it">Information Technology</option>
+                    <option value="gameDevelopment">Game Development</option>
+                </select>
+            </div>
 
-<!--Interested in studying with us check list-->
-<div id="interested-form-group">
-    <label for="interested">Would you be interested in studying with us?</label>
-    <div class="radio-group">
-        <input type="radio" name="interest" value="yes" required />
-        <label for="yes">Yes</label><br />
-        <input type="radio" name="interest" value="no" required />
-        <label for="no">No</label><br />
-        <input type="radio" name="interest" value="unsure" required />
-        <label for="unsure">Unsure</label><br />
+            <!--Interested in studying with us check list-->
+            <div id="interested-form-group">
+                <label for="interested">Would you be interested in studying with us?</label>
+                <div class="radio-group">
+                    <input type="radio" name="interest" value="yes" required />
+                    <label for="yes">Yes</label><br />
+                    <input type="radio" name="interest" value="no" required />
+                    <label for="no">No</label><br />
+                    <input type="radio" name="interest" value="unsure" required />
+                    <label for="unsure">Unsure</label><br />
+                </div>
+
+            </div>
+
+            <!--Improvements-->
+            <div id="improvements-form-group">
+                <label for="improvements">What improvements would you like to see?</label>
+                <div id="checkbox-group">
+                    <input type="checkbox" id="fountains" name="fountains" value="fountains" />
+                    <label for="fountains">Water fountains</label><br />
+                    <input type="checkbox" id="food" name="food" value="food" />
+                    <label for="food">More variety of food</label><br />
+                    <input type="checkbox" id="activities" name="activities" value="activities" />
+                    <label for="activites">More activities</label><br />
+                    <input type="checkbox" id="societies" name="societies" value="societies" />
+                    <label for="food">Societies</label><br />
+                    <input type="checkbox" id="library" name="library" value="library" />
+                    <label for="library">Library Services</label><br />
+                </div>
+            </div>
+
+            <!--Comments or Suggestions-->
+            <div id="comments-form-group">
+                <label for="comments">Any comments or suggestions?</label><br />
+                <textarea name="comments" id="comments" cols="50" rows="4" placeholder="Enter your feeback here..."></textarea><br />
+            </div>
+
+            <!--Submit button-->
+            <div id="submit-form-group">
+                <button id="submit" type="submit">Submit your interest</button>
+            </div>
+        </form>
     </div>
-    
-</div>
-
-<!--Improvements-->
-<div id="improvements-form-group">
-    <label for="improvements">What improvements would you like to see?</label>
-    <div id="checkbox-group">
-        <input type="checkbox" id="fountains" name="fountains" value="fountains" />
-        <label for="fountains">Water fountains</label><br />
-        <input type="checkbox" id="food" name="food" value="food" />
-        <label for="food">More variety of food</label><br />
-        <input type="checkbox" id="activities" name="activities" value="activities" />
-        <label for="activites">More activities</label><br />
-        <input type="checkbox" id="societies" name="societies" value="societies" />
-        <label for="food">Societies</label><br />
-        <input type="checkbox" id="library" name="library" value="library" />
-        <label for="library">Library Services</label><br />
-    </div>
-</div>
-
-<!--Comments or Suggestions-->
-<div id="comments-form-group">
-    <label for="comments">Any comments or suggestions?</label><br />
-    <textarea name="comments" id="comments" cols="50" rows="4" placeholder="Enter your feeback here..."></textarea><br />
-</div>
-
-<!--Submit button-->
-<div id="submit-form-group">
-    <button id="submit" type="submit">Submit your interest</button>
-</div>
-        </div>
-    </div>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
